@@ -97,5 +97,8 @@ int	main(void)
 	t3 = prod(t1, t2);
 	say("\nproduct: \n");
 	prt(t3);
+	free(t1);
+	free(t2);
+	free(t3);
 	return (0);
 }
