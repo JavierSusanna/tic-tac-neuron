@@ -19,6 +19,6 @@ typedef struct	s_layer
 	float			**param;
 }				t_layer;
 
-void	prt(t_matrix *t);
-t_matrix	*dot(t_matrix *t1, t_matrix *t2);
+void		prt(t_matrix *t);
+t_matrix	*prod(t_matrix *t1, t_matrix *t2);
 #endif
