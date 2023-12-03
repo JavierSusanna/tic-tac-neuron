@@ -54,9 +54,22 @@ int	lines_ok(int board)
 	return (!ct_lines);
 }
 
+int	reduced_ok(int board)
+{
+	char	order[8][10] = {"165840327", "381246705", "723048561", "507642183",
+				"327840165", "705246381", "561048723", "183642507"};
+	int	n;
+	int	board_n;
+
+	n = 0;
+	while (n < 9)
+
+	
+}
+
 int	valid_board(int board)
 {
-	return (marks_ok(board) && lines_ok(board));
+	return (marks_ok(board) && lines_ok(board) && reduced_ok(board));
 }
 
 void	show_board(int board)
