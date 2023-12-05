@@ -86,9 +86,41 @@ int	reduced_ok(int board)
 	return (1);
 }
 
+int	possible_line(int board, int i, int j)
+{
+	int	ct;
+
+	ct = 0;
+	ct |= 1 << mark(board, i);
+	ct |= 1 << mark(board, j);
+	ct |= 1 << mark(board, 12 - i - j);
+	return ((ct & 6) != 6);
+}
+
+int	forced_draw(int board)
+{
+	char	order[] = "165840327";
+	int		i;
+	int		j;
+	int		possible;
+
+	possible = 0;
+	i = -1;
+	while (++i < 4 && !possible)
+	{
+		j = 3 - i;
+		if (j < i)
+			j = i;
+		while (++j < 6 - i / 2)
+			possible += possible_line(board, i, j);
+	}
+	return (!possible);
+}
+
 int	valid_board(int board)
 {
-	return (marks_ok(board) && lines_ok(board) && reduced_ok(board));
+	return (marks_ok(board) && lines_ok(board) && reduced_ok(board) 
+			&& !forced_draw(board));
 }
 /*
 165840327 -> 012345678
@@ -101,6 +133,7 @@ void	show_board(int board)
 	int		pos;
 	char	m;
 
+	printf("%d\n", board);
 	pos = -1;
 	while (++pos < 9)
 	{
@@ -117,6 +150,7 @@ int	main(void)
 	int	n;
 	int ct_valid;
 
+	setvbuf(stdout, NULL, _IONBF, 0);
 	ct_valid = 0;
 	n = -1;
 	while (++n < 27*27*27)
