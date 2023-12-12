@@ -1,5 +1,19 @@
+#include <time.h>
+#include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
+
+typedef struct	s_state
+{
+	int	board;
+	int	next_move[9];
+}		t_state;
+
+typedef struct	s_game
+{
+	int	box[9];
+	char	move[9];
+}		t_game;
 
 int	mark(int board, int pos)
 {
@@ -8,26 +22,32 @@ int	mark(int board, int pos)
 	return (board % 3);
 }
 
-int	marks_ok(int board)
+int	next_player(int board)
 {
 	int 	ct[3] = {0, 0, 0};
-	int		pos;
+	int	pos;
 	char	m;
 
 	pos = -1;
 	while(++pos < 9)
 		ct[mark(board, pos)]++;
-	return (ct[0] > 1 && (ct[1] == ct[2] || ct[1] - 1 == ct[2]));
+	if (ct[0] && ct[1] == ct[2])
+		return (1);
+	if (ct[0] && ct[1] - 1 == ct[2])
+		return (2);
+	return (0);
 }
 
-int	lines_ok(int board)
+int	won(int board)
 {
 	int	pos;
 	int	pos2;
 	int	pos3;
 	int	ct_lines = 0;
 	int	m;
+	int	who;
 
+	who = 0;
 	pos = -1;
 	while(++pos < 4)
 	{
@@ -39,10 +59,17 @@ int	lines_ok(int board)
 		while (--pos3 > ++pos2)
 		{
 			if (mark(board, pos2) == m && mark(board, pos3) == m)
+			{
+				who = m;
 				ct_lines++;
+			}
 		}
 	}
-	return (!ct_lines);
+	if (!ct_lines)
+		return (0);
+	if (1 == ct_lines)
+		return (who);
+	return (-1);
 }
 /*                               XOR(H):         XOR(D):
  * 165  01.20.12 0001.1000.0110  0111.0000.0111  0000.0010.0010
@@ -71,19 +98,21 @@ int	rearrange(int board, char *order_new)
 	return (board_new);
 }
 
-int	reduced_ok(int board)
+int	reduce(int board)
 {
 	char	order[8][10] = {"165840327", "381246705", "723048561",
 		"507642183", "327840165", "705246381", "561048723", "183642507"};
 	int	n;
+	int	ret;
 
+	ret = board;
 	n = -1;
 	while (++n < 8)
 	{
-		if (rearrange(board, order[n]) < board)
-			return (0);
+		if (rearrange(board, order[n]) < ret)
+			ret = rearrange(board, order[n]);
 	}
-	return (1);
+	return (ret);
 }
 
 int	possible_line(int board, int i, int j)
@@ -119,12 +148,22 @@ int	forced_draw(int board)
 
 int	valid_board(int board)
 {
-	return (marks_ok(board) && lines_ok(board) && reduced_ok(board) 
+	return (next_player(board) && !won(board) && reduce(board) == board
 			&& !forced_draw(board));
 }
 /*
 165840327 -> 012345678
 012345678    507642183
+
+165840327 -> 012345678
+507642183 -> 258147036
+723048561 -> 876543210
+381246705 -> 630741852
+165840327 -> 012345678
+
+165840327 -> 012345678
+561048723 -> 210543876
+165840327 -> 012345678
 */
 void	show_board(int board)
 {
@@ -145,23 +184,97 @@ void	show_board(int board)
 	write(1, "\n", 1);
 }
 
+void	initialize(t_state *st, int board)
+{
+	st->board = board;
+	while (++n < 9)
+	{
+		if (mark(board, n))
+			st->next_move[n] = 0;
+		else
+			st->next_move[n] = 8;
+	}
+}
+
+int	find(int board, t_state **st)
+{
+	int	ret;
+
+	ret = 0;
+	while (st[ret]->board != board && st[ret]->board != -1)
+		ret++;
+	if (st[ret]->board == board)
+		return (ret);
+	return (-1);
+}
+
+int	move(int box, t_state **st)
+{
+	int	sum;
+	int	n;
+	int	trit;
+	
+	sum = 0;
+	n = -1;
+	while (++n < 9)
+		sum += st[box]->next_move[n];
+	sum *= rand() / (RAND_MAX >> 8);
+	sum = sum >> 8;
+	n = -1;
+	trit = 1;
+	while (sum > 0)
+	{
+		sum -= st[box]->next_move[++n];
+		trit *= 3;
+	}
+	return (st[box]->board + trit * next_player(board));
+}
+
+void	play(t_state **st)
+{
+	int	n;
+	int	board;
+	int	box;
+
+	n = 0;
+	while (++n < 10000)
+	{
+		board = 0;
+		box = find(board, st);
+		while (box > -1)
+		{
+			board = move(box, st);
+			box = find(board, st);
+		}
+		if (won(board))
+			;
+		else
+			;
+	}
+}
+
 int	main(void)
 {
 	int	n;
 	int ct_valid;
+	t_state	state[600];
 
 	setvbuf(stdout, NULL, _IONBF, 0);
+	srand(time(NULL));
 	ct_valid = 0;
 	n = -1;
 	while (++n < 27*27*27)
 	{
 		if (valid_board(n))
 		{
+			initialize(*(state[ct_valid]), n);
 			ct_valid++;
 			show_board(n);
 		}
 	}
+	state[ct_valid].board = -1;
 	printf("Valid boards: %i\n", ct_valid);
+	play(state);
 	return (0);
 }
 /*
