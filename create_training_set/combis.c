@@ -6,14 +6,21 @@
 typedef struct	s_state
 {
 	int	board;
-	int	next_move[9];
+	int	good[9];
 }		t_state;
 
 typedef struct	s_game
 {
+	int	moves;
 	int	box[9];
 	char	move[9];
 }		t_game;
+
+typedef struct	s_set
+{
+	t_state	st[628];
+	t_game	gm;
+}		t_set;
 
 int	mark(int board, int pos)
 {
@@ -22,7 +29,7 @@ int	mark(int board, int pos)
 	return (board % 3);
 }
 
-int	next_player(int board)
+int	gaps(int board)
 {
 	int 	ct[3] = {0, 0, 0};
 	int	pos;
@@ -31,11 +38,9 @@ int	next_player(int board)
 	pos = -1;
 	while(++pos < 9)
 		ct[mark(board, pos)]++;
-	if (ct[0] && ct[1] == ct[2])
-		return (1);
-	if (ct[0] && ct[1] - 1 == ct[2])
-		return (2);
-	return (0);
+	if (ct[1] == ct[2] || ct[1] - 1 == ct[2])
+		return (ct[0]);
+	return (-1);
 }
 
 int	won(int board)
@@ -148,8 +153,9 @@ int	forced_draw(int board)
 
 int	valid_board(int board)
 {
-	return (next_player(board) && !won(board) && reduce(board) == board
-			&& !forced_draw(board));
+	if (!won(board) && reduce(board) == board) // && !forced_draw(board))
+		return (gaps(board));
+	return (0);
 }
 /*
 165840327 -> 012345678
@@ -186,13 +192,16 @@ void	show_board(int board)
 
 void	initialize(t_state *st, int board)
 {
+	int	n;
+
 	st->board = board;
+	n = -1;
 	while (++n < 9)
 	{
 		if (mark(board, n))
-			st->next_move[n] = 0;
+			st->good[n] = 0;
 		else
-			st->next_move[n] = 8;
+			st->good[n] = 8;
 	}
 }
 
@@ -208,7 +217,7 @@ int	find(int board, t_state **st)
 	return (-1);
 }
 
-int	move(int box, t_state **st)
+int	move(int box, t_state *st)
 {
 	int	sum;
 	int	n;
@@ -217,20 +226,19 @@ int	move(int box, t_state **st)
 	sum = 0;
 	n = -1;
 	while (++n < 9)
-		sum += st[box]->next_move[n];
+		sum += st->good[n];
 	sum *= rand() / (RAND_MAX >> 8);
-	sum = sum >> 8;
+	sum = sum >> 8 + 1;
 	n = -1;
-	trit = 1;
 	while (sum > 0)
-	{
-		sum -= st[box]->next_move[++n];
+		sum -= st->good[++n];
+	trit = 1;
+	while (n-- >= 0)
 		trit *= 3;
-	}
-	return (st[box]->board + trit * next_player(board));
+	return (st->board + trit * (gaps(st->board) % 2 + 1));
 }
 
-void	play(t_state **st)
+void	play(t_set *all)
 {
 	int	n;
 	int	board;
@@ -239,11 +247,12 @@ void	play(t_state **st)
 	n = 0;
 	while (++n < 10000)
 	{
+		all->gm.moves = 0;
 		board = 0;
-		box = find(board, st);
+		box = find(board, *(all->st));
 		while (box > -1)
 		{
-			board = move(box, st);
+			board = move(*(all->st[box]));//devolver la casilla
 			box = find(board, st);
 		}
 		if (won(board))
@@ -256,25 +265,32 @@ void	play(t_state **st)
 int	main(void)
 {
 	int	n;
-	int ct_valid;
-	t_state	state[600];
+	int	ct_valid;
+	int	ct_valid1;
+	int	val;
+	t_set	all;
 
 	setvbuf(stdout, NULL, _IONBF, 0);
 	srand(time(NULL));
 	ct_valid = 0;
+	ct_valid1 = 0;
 	n = -1;
 	while (++n < 27*27*27)
 	{
-		if (valid_board(n))
+		val = valid_board(n);
+		if (val > 0)
 		{
-			initialize(*(state[ct_valid]), n);
+			initialize(*(all.st[ct_valid]), n);
 			ct_valid++;
 			show_board(n);
 		}
+		if (1 == val)
+			ct_valid1++;
 	}
-	state[ct_valid].board = -1;
+	all.st[ct_valid].board = -1;
 	printf("Valid boards: %i\n", ct_valid);
-	play(state);
+	printf("of which boards1: %i\n", ct_valid1);
+	play(*all);
 	return (0);
 }
 /*
