@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
+/*
+typedef struct	s_game
+{
+	int	moves;
+	int	box[9];
+	char	move[9];
+}		t_game;*/
 
 typedef struct	s_state
 {
@@ -9,17 +16,13 @@ typedef struct	s_state
 	int	good[9];
 }		t_state;
 
-typedef struct	s_game
-{
-	int	moves;
-	int	box[9];
-	char	move[9];
-}		t_game;
-
 typedef struct	s_set
 {
 	t_state	st[628];
-	t_game	gm;
+	int	moves;
+	int	box[9];
+	int	sym[9];
+	int	move[9];
 }		t_set;
 
 int	mark(int board, int pos)
@@ -90,12 +93,23 @@ int	won(int board)
    561  12.20.01 0110.1000.0001  0111.0000.0111  0010.0010.0000
    */
 
-int	rearrange(int board, char *order_new)
+int	revert(int board, int  n)
 {
+	char	opposite[] = "03214567";
+
+	return (rearrange(board, opposite[n] - '0'));
+}
+
+int	rearrange(int board, int  n)
+{
+	char	order[8][10] = {"165840327", "381246705", "723048561",
+		"507642183", "327840165", "705246381", "561048723", "183642507"};
 	char	pos_ini[] = "507642183";
+	char	*order_new;
 	int		pos;
 	int		board_new;
 
+	order_new = order[n];
 	board_new = 0;
 	pos = -1;
 	while (++pos < 9)
@@ -105,19 +119,44 @@ int	rearrange(int board, char *order_new)
 
 int	reduce(int board)
 {
-	char	order[8][10] = {"165840327", "381246705", "723048561",
-		"507642183", "327840165", "705246381", "561048723", "183642507"};
 	int	n;
-	int	ret;
+	int	min;
+	int	min_n;
 
-	ret = board;
+	min = board;
+	min_n = 0;
 	n = -1;
 	while (++n < 8)
 	{
-		if (rearrange(board, order[n]) < ret)
-			ret = rearrange(board, order[n]);
+		if (rearrange(board, n) < min)
+		{
+			min_n = n;
+			min = rearrange(board, n);
+		}
 	}
-	return (ret);
+	return (min_n);
+}
+
+int	clean_symm(t_state *st)
+{
+	int		op;
+	int		pos;
+	int		new_pos;
+
+	op = 0;
+	while (++op < 8)
+	{
+		if (rearrange(st->board, op) == st->board)
+		{
+			pos = -1;
+			while (++pos < 4)
+			{
+				new_pos = apply_symm(pos, op);
+				if (st->good[pos] && new_pos != pos)
+					st->good[new_pos] = 0;
+			}
+		}
+	}
 }
 
 int	possible_line(int board, int i, int j)
@@ -190,6 +229,106 @@ void	show_board(int board)
 	write(1, "\n", 1);
 }
 
+void	show_state(t_state *st)
+{
+	char	order[] = "165840327";
+	char	marks[] = ".OX";
+	int		pos;
+	char	val;
+	int	m;
+
+	printf("%d\n", st->board);
+	pos = -1;
+	while (++pos < 9)
+	{
+		m = mark(st->board, order[pos] - '0');
+		if (!m)
+		{
+			val = st->good[order[pos] - '0'] + '0';
+			write(1, &val, 1);
+		}
+		else
+			write(1, marks + m, 1);
+		if (pos % 3 == 2)
+			write(1, "\n", 1);
+	}
+	write(1, "\n", 1);
+}
+
+int	find(int board, t_state *st)
+{
+	int	ret;
+
+	ret = 0;
+	while (st[ret].board != board && st[ret].board != -1)
+		ret++;
+	if (st[ret].board == board)
+		return (ret);
+	return (-1);
+}
+
+int	rnd_move(t_state *st)
+{
+	int		sum;
+	int		n;
+
+	sum = 0;
+	n = -1;
+	while (++n < 9)
+		sum += st->good[n];
+	sum *= rand() & 255;
+	sum = sum >> 8 + 1;
+	n = -1;
+	while (sum > 0)
+		sum -= st->good[++n];
+	return (n);
+}
+
+int	do_move(int m, t_set *all)
+{
+	int	trit;
+	int	new_board;
+
+	all->move[all->moves] = m;
+	trit = 1;
+	while (m-- > 0)
+		trit *= 3;
+	new_board = all->st[all->box[all->moves]].board;
+	new_board += trit * (((gaps(all->st[all->box[all->moves]].board) + 1) % 2) + 1);
+	all->moves++;
+	all->box[all->moves] = find(new_board, all->st);
+	return (new_board);
+}
+
+void	play(t_set *all)
+{
+	int	n;
+	int	box;
+	int	square;
+	int	board;
+
+	n = 0;
+	while (++n < 4) //10000)
+	{
+		printf("*****************\n");
+		all->moves = 0;
+		all->box[all->moves] = 0;
+		while (all->box[all->moves] > -1)
+		{
+			square = rnd_move(all->st +  all->box[all->moves]);
+			board = do_move(square, all);
+			printf("move %i: square %i\n", all->moves, square);
+			show_board(board);
+			printf("board %i, box %i\n", board, all->box[all->moves]);
+		}
+		if (won(board))
+		{
+			all->st[all->box[all->moves - 1]].good[all->move[all->moves - 1]] = 16;
+			all->st[all->box[all->moves - 2]].good[all->move[all->moves - 2]] = 1;
+		}
+	}
+}
+
 void	initialize(t_state *st, int board)
 {
 	int	n;
@@ -202,63 +341,6 @@ void	initialize(t_state *st, int board)
 			st->good[n] = 0;
 		else
 			st->good[n] = 8;
-	}
-}
-
-int	find(int board, t_state **st)
-{
-	int	ret;
-
-	ret = 0;
-	while (st[ret]->board != board && st[ret]->board != -1)
-		ret++;
-	if (st[ret]->board == board)
-		return (ret);
-	return (-1);
-}
-
-int	move(int box, t_state *st)
-{
-	int	sum;
-	int	n;
-	int	trit;
-	
-	sum = 0;
-	n = -1;
-	while (++n < 9)
-		sum += st->good[n];
-	sum *= rand() / (RAND_MAX >> 8);
-	sum = sum >> 8 + 1;
-	n = -1;
-	while (sum > 0)
-		sum -= st->good[++n];
-	trit = 1;
-	while (n-- >= 0)
-		trit *= 3;
-	return (st->board + trit * (gaps(st->board) % 2 + 1));
-}
-
-void	play(t_set *all)
-{
-	int	n;
-	int	board;
-	int	box;
-
-	n = 0;
-	while (++n < 10000)
-	{
-		all->gm.moves = 0;
-		board = 0;
-		box = find(board, *(all->st));
-		while (box > -1)
-		{
-			board = move(*(all->st[box]));//devolver la casilla
-			box = find(board, st);
-		}
-		if (won(board))
-			;
-		else
-			;
 	}
 }
 
@@ -280,9 +362,9 @@ int	main(void)
 		val = valid_board(n);
 		if (val > 0)
 		{
-			initialize(*(all.st[ct_valid]), n);
+			initialize(&(all.st[ct_valid]), n);
 			ct_valid++;
-			show_board(n);
+			/*show_board(n);*/
 		}
 		if (1 == val)
 			ct_valid1++;
@@ -290,7 +372,10 @@ int	main(void)
 	all.st[ct_valid].board = -1;
 	printf("Valid boards: %i\n", ct_valid);
 	printf("of which boards1: %i\n", ct_valid1);
-	play(*all);
+	play(&all);
+/*	n = -1;
+	while (++n < 628)
+		show_state(all.st + n);*/
 	return (0);
 }
 /*
