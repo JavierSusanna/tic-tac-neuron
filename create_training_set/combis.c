@@ -21,7 +21,7 @@ typedef struct	s_set
 	t_state	st[628];
 	int	moves;
 	int	box[9];
-	int	sym[9];
+	int	transform[9];
 	int	move[9];
 }		t_set;
 
@@ -93,14 +93,7 @@ int	won(int board)
    561  12.20.01 0110.1000.0001  0111.0000.0111  0010.0010.0000
    */
 
-int	revert(int board, int  n)
-{
-	char	opposite[] = "03214567";
-
-	return (rearrange(board, opposite[n] - '0'));
-}
-
-int	rearrange(int board, int  n)
+int	rearrange(int board, int  op)
 {
 	char	order[8][10] = {"165840327", "381246705", "723048561",
 		"507642183", "327840165", "705246381", "561048723", "183642507"};
@@ -109,12 +102,30 @@ int	rearrange(int board, int  n)
 	int		pos;
 	int		board_new;
 
-	order_new = order[n];
+	order_new = order[op];
 	board_new = 0;
-	pos = -1;
-	while (++pos < 9)
+	pos = 9;
+	while (--pos >= 0)
 		board_new = board_new * 3 + mark(board, order_new[pos_ini[pos] - '0'] - '0');
 	return (board_new);
+}
+
+int	revert(int board, int  n)
+{
+	char	opposite[] = "03214567";
+
+	return (rearrange(board, opposite[n] - '0'));
+}
+
+int	apply_symm(int pos, int  op)
+{
+	char	order[8][10] = {"165840327", "381246705", "723048561",
+		"507642183", "327840165", "705246381", "561048723", "183642507"};
+	char	pos_ini[] = "507642183";
+	char	*order_new;
+
+	order_new = order[op];
+	return (order_new[pos_ini[pos] - '0']);
 }
 
 int	reduce(int board)
@@ -137,7 +148,7 @@ int	reduce(int board)
 	return (min_n);
 }
 
-int	clean_symm(t_state *st)
+void	clean_symm(t_state *st)
 {
 	int		op;
 	int		pos;
@@ -192,7 +203,7 @@ int	forced_draw(int board)
 
 int	valid_board(int board)
 {
-	if (!won(board) && reduce(board) == board) // && !forced_draw(board))
+	if (!won(board) && !reduce(board)) // && !forced_draw(board))
 		return (gaps(board));
 	return (0);
 }
@@ -213,7 +224,7 @@ int	valid_board(int board)
 void	show_board(int board)
 {
 	char	order[] = "165840327";
-	char	marks[] = ".OX";
+	char	marks[] = ".XO";
 	int		pos;
 	char	m;
 
@@ -232,7 +243,7 @@ void	show_board(int board)
 void	show_state(t_state *st)
 {
 	char	order[] = "165840327";
-	char	marks[] = ".OX";
+	char	marks[] = ".XO";
 	int		pos;
 	char	val;
 	int	m;
@@ -277,7 +288,7 @@ int	rnd_move(t_state *st)
 	while (++n < 9)
 		sum += st->good[n];
 	sum *= rand() & 255;
-	sum = sum >> 8 + 1;
+	sum = (sum >> 8) + 1;
 	n = -1;
 	while (sum > 0)
 		sum -= st->good[++n];
@@ -293,10 +304,14 @@ int	do_move(int m, t_set *all)
 	trit = 1;
 	while (m-- > 0)
 		trit *= 3;
-	new_board = all->st[all->box[all->moves]].board;
-	new_board += trit * (((gaps(all->st[all->box[all->moves]].board) + 1) % 2) + 1);
-	all->moves++;
+	new_board = 0;
+	if (all->moves)
+		new_board = all->st[all->box[all->moves - 1]].board;
+	new_board += trit * (all->moves % 2 + 1);
+	all->transform[all->moves] = reduce(new_board);
+	new_board = rearrange(new_board, all->transform[all->moves]);
 	all->box[all->moves] = find(new_board, all->st);
+	all->moves++;
 	return (new_board);
 }
 
@@ -342,6 +357,7 @@ void	initialize(t_state *st, int board)
 		else
 			st->good[n] = 8;
 	}
+	clean_symm(st);
 }
 
 int	main(void)
