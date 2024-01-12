@@ -25,6 +25,21 @@ typedef struct	s_set
 	int	move[9];
 }		t_set;
 
+int	ft_atoi(char *str)
+{
+	int	ret;
+
+	ret = 0;
+	while (*str)
+	{
+		if (*str < '0' || *str > '9' || ret > 999999)
+			return (-1);
+		ret = ret * 10 + (*str - '0');
+		str++;
+	}
+	return (ret);
+}
+
 int	mark(int board, int pos)
 {
 	while (pos--)
@@ -95,19 +110,32 @@ int	won(int board)
 
 int	rearrange(int board, int  op)
 {
-	char	order[8][10] = {"165840327", "381246705", "723048561",
-		"507642183", "327840165", "705246381", "561048723", "183642507"};
-	char	pos_ini[] = "507642183";
+/*	char	order[8][10] = {"165840327", "381246705", "723048561",
+		"507642183", "327840165", "705246381", "561048723", "183642507"};*/
+	char	order[3][10] = {"012345678", "630741852", "210543876"};
 	char	*order_new;
 	int		pos;
 	int		board_new;
 
-	order_new = order[op];
+	if (op < 0 || op > 7)
+		return (-1);
+	if (!op)
+		return (board);
+	if (op & 4)
+	{
+		order_new = order[2];
+		op ^= 4;
+	}
+	else
+	{
+		order_new = order[1];
+		op--;
+	}
 	board_new = 0;
 	pos = 9;
 	while (--pos >= 0)
-		board_new = board_new * 3 + mark(board, order_new[pos_ini[pos] - '0'] - '0');
-	return (board_new);
+		board_new = board_new * 3 + mark(board, order_new[pos] - '0');
+	return (rearrange(board_new, op));
 }
 
 int	revert(int board, int  n)
@@ -359,7 +387,7 @@ void	initialize(t_state *st, int board)
 	}
 	clean_symm(st);
 }
-
+/*
 int	main(void)
 {
 	int	n;
@@ -380,7 +408,7 @@ int	main(void)
 		{
 			initialize(&(all.st[ct_valid]), n);
 			ct_valid++;
-			/*show_board(n);*/
+			//show_board(n);
 		}
 		if (1 == val)
 			ct_valid1++;
@@ -389,19 +417,21 @@ int	main(void)
 	printf("Valid boards: %i\n", ct_valid);
 	printf("of which boards1: %i\n", ct_valid1);
 	play(&all);
-/*	n = -1;
-	while (++n < 628)
-		show_state(all.st + n);*/
+//	n = -1;
+//	while (++n < 628)
+//		show_state(all.st + n);
 	return (0);
 }
-/*
-int	main(void)
+*/
+int	main(int narg, char **args)
 {
 	int	board;
 
-	board = 13932;
+	if (narg < 3)
+		return (0);
+	board = ft_atoi(args[1]);
 	show_board(board);
-	board = rearrange(board, "381246705");
+	board = rearrange(board, ft_atoi(args[2]));
 	show_board(board);
 	return (0);
-}*/
+}
