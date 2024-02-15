@@ -19,15 +19,13 @@ int	main(void)
 {
 	int	n;
 	t_set	all;
-	int	*ans;
 
 	setvbuf(stdout, NULL, _IONBF, 0);
 	srand(time(NULL));
 	printf("init\n");
 	initialize(all.st);
 	printf("play\n");
-	ans = play(&all);
-	printf("Wins: %i\nDraws: %i\nLosses: %i\n", ans[2], ans[1], ans[0]);
+	play(&all);
 	n = -1;
 	printf("####################\n");
 	while (++n < 628)

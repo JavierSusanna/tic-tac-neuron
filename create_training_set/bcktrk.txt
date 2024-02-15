@@ -1,0 +1,6577 @@
+init
+play
+moves: 0
+moves: 1
+moves: 2
+moves: 3
+moves: 4
+moves: 5
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+moves: 8
+ret: 1
+ret: 3
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 3
+ret: 1
+moves: 5
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 3
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 3
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 3
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 3
+ret: 1
+ret: 1
+ret: 3
+moves: 4
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 3
+moves: 6
+ret: 3
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+moves: 7
+ret: 1
+ret: 3
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+ret: 3
+ret: 1
+moves: 4
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+moves: 7
+ret: 1
+ret: 3
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+moves: 8
+ret: 1
+ret: 3
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+moves: 8
+ret: 1
+ret: 3
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 3
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 3
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 3
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+moves: 6
+ret: 3
+moves: 6
+ret: 3
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+ret: 1
+ret: 1
+moves: 3
+moves: 4
+moves: 5
+moves: 6
+moves: 7
+moves: 8
+ret: 2
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+moves: 8
+ret: 2
+ret: 2
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+moves: 8
+ret: 1
+ret: 3
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 1
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 1
+ret: 2
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+moves: 8
+ret: 1
+ret: 3
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 1
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+ret: 1
+ret: 2
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 2
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 1
+ret: 2
+ret: 2
+moves: 6
+moves: 7
+ret: 3
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+moves: 7
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 1
+ret: 2
+ret: 1
+ret: 2
+moves: 5
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 2
+ret: 1
+moves: 7
+ret: 2
+ret: 2
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+ret: 1
+ret: 2
+moves: 5
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 2
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 3
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 1
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+ret: 1
+ret: 2
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+moves: 8
+ret: 1
+ret: 3
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 2
+ret: 1
+moves: 7
+ret: 2
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+ret: 3
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 3
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 3
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 2
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+moves: 8
+ret: 2
+ret: 2
+ret: 2
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+ret: 3
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 3
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+moves: 8
+ret: 2
+ret: 2
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+ret: 2
+moves: 6
+moves: 7
+ret: 3
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+moves: 7
+ret: 3
+ret: 1
+ret: 2
+ret: 2
+moves: 4
+moves: 5
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+ret: 3
+moves: 6
+ret: 1
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+moves: 7
+ret: 3
+ret: 1
+ret: 3
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 2
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 2
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+ret: 1
+ret: 2
+moves: 3
+moves: 4
+moves: 5
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+moves: 8
+ret: 2
+ret: 2
+ret: 1
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+moves: 7
+ret: 2
+ret: 2
+ret: 2
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 2
+ret: 1
+ret: 3
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 2
+ret: 1
+ret: 3
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+ret: 3
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 3
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+ret: 2
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 2
+ret: 1
+ret: 2
+ret: 2
+moves: 3
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 3
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 3
+ret: 1
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+ret: 1
+ret: 3
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+ret: 3
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 3
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 3
+moves: 6
+ret: 3
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+ret: 1
+ret: 3
+moves: 3
+moves: 4
+ret: 3
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 1
+ret: 2
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 2
+moves: 7
+ret: 1
+ret: 2
+moves: 6
+moves: 7
+ret: 3
+moves: 7
+ret: 1
+ret: 1
+ret: 2
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 3
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 3
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+moves: 7
+ret: 2
+ret: 2
+ret: 1
+ret: 2
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 3
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 2
+moves: 5
+ret: 2
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+ret: 2
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 2
+ret: 1
+ret: 2
+moves: 5
+moves: 6
+moves: 7
+ret: 2
+ret: 1
+moves: 6
+ret: 2
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 2
+ret: 2
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 2
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+ret: 3
+moves: 6
+ret: 2
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 2
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 3
+moves: 6
+ret: 1
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 2
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+ret: 1
+ret: 1
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 2
+ret: 1
+moves: 6
+ret: 3
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+moves: 5
+ret: 2
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+ret: 3
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 3
+moves: 5
+ret: 1
+ret: 1
+ret: 1
+moves: 3
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 1
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+ret: 3
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 3
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 3
+moves: 5
+ret: 1
+ret: 1
+ret: 1
+ret: 1
+moves: 2
+moves: 3
+moves: 4
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 1
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 1
+ret: 2
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 1
+ret: 2
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+moves: 8
+ret: 1
+ret: 3
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+moves: 7
+moves: 8
+ret: 2
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+moves: 8
+ret: 2
+ret: 2
+ret: 1
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 1
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 2
+ret: 2
+ret: 2
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+ret: 2
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 1
+ret: 2
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 2
+ret: 1
+ret: 3
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 3
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 2
+moves: 6
+ret: 2
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+ret: 2
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 2
+ret: 1
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 1
+ret: 2
+ret: 2
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 3
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 3
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 1
+ret: 2
+ret: 1
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 2
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+ret: 1
+ret: 2
+ret: 2
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+moves: 8
+ret: 1
+ret: 3
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+moves: 8
+ret: 1
+ret: 3
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 1
+ret: 2
+moves: 7
+ret: 1
+ret: 2
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+moves: 7
+moves: 8
+ret: 1
+ret: 3
+ret: 1
+ret: 2
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+ret: 2
+moves: 6
+moves: 7
+ret: 3
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 3
+ret: 1
+ret: 2
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 2
+ret: 1
+moves: 4
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+moves: 7
+ret: 1
+ret: 3
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 2
+moves: 6
+moves: 7
+ret: 3
+moves: 7
+ret: 1
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 3
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 1
+ret: 1
+ret: 2
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+moves: 8
+ret: 1
+ret: 3
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 3
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+ret: 1
+ret: 3
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+moves: 7
+ret: 3
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 3
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+ret: 1
+ret: 3
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+ret: 1
+ret: 1
+ret: 1
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 1
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+ret: 2
+ret: 2
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+ret: 1
+moves: 6
+ret: 1
+ret: 2
+moves: 5
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+ret: 2
+ret: 2
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 2
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+ret: 1
+moves: 6
+ret: 1
+ret: 2
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+ret: 2
+moves: 6
+ret: 3
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+ret: 1
+ret: 3
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 2
+ret: 2
+moves: 7
+ret: 2
+ret: 2
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 3
+ret: 1
+ret: 2
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+moves: 7
+ret: 2
+ret: 2
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 2
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 3
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 1
+ret: 2
+moves: 4
+moves: 5
+ret: 2
+moves: 5
+ret: 2
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+ret: 2
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+ret: 2
+moves: 6
+ret: 3
+ret: 1
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+ret: 2
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+ret: 2
+ret: 2
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+ret: 1
+moves: 5
+ret: 3
+ret: 1
+moves: 4
+moves: 5
+ret: 2
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 2
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 2
+moves: 6
+ret: 1
+ret: 2
+ret: 1
+ret: 2
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+ret: 3
+ret: 1
+ret: 3
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+ret: 1
+ret: 1
+moves: 3
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 3
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 2
+moves: 7
+ret: 1
+ret: 2
+moves: 6
+ret: 2
+ret: 2
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+moves: 5
+ret: 2
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 2
+moves: 6
+ret: 1
+ret: 2
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+ret: 1
+ret: 3
+moves: 3
+moves: 4
+ret: 2
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 2
+moves: 5
+ret: 2
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+moves: 5
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 2
+moves: 5
+ret: 2
+moves: 5
+ret: 2
+moves: 5
+ret: 2
+ret: 2
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+moves: 5
+ret: 1
+moves: 5
+ret: 2
+ret: 1
+ret: 2
+ret: 1
+moves: 2
+moves: 3
+moves: 4
+ret: 2
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+moves: 8
+ret: 1
+ret: 2
+moves: 7
+ret: 2
+ret: 2
+moves: 6
+moves: 7
+ret: 2
+ret: 1
+moves: 6
+ret: 1
+ret: 2
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 3
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 2
+moves: 7
+ret: 1
+ret: 2
+moves: 6
+ret: 3
+ret: 1
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+ret: 2
+moves: 6
+ret: 2
+ret: 1
+ret: 2
+moves: 4
+ret: 2
+moves: 4
+moves: 5
+ret: 2
+moves: 5
+ret: 2
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 2
+ret: 2
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+ret: 2
+ret: 2
+ret: 2
+moves: 4
+moves: 5
+ret: 2
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 2
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 2
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+ret: 2
+ret: 2
+moves: 5
+ret: 2
+ret: 1
+ret: 2
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+ret: 2
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 2
+ret: 2
+ret: 2
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 2
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+moves: 5
+ret: 3
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 2
+moves: 5
+ret: 1
+ret: 2
+moves: 4
+ret: 1
+ret: 2
+moves: 3
+moves: 4
+ret: 3
+moves: 4
+ret: 3
+ret: 1
+ret: 2
+moves: 2
+moves: 3
+ret: 1
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+ret: 2
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 2
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+moves: 8
+ret: 2
+ret: 2
+moves: 7
+ret: 2
+ret: 2
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 2
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 2
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 2
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+ret: 2
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+ret: 2
+moves: 6
+ret: 1
+ret: 2
+moves: 5
+ret: 2
+ret: 2
+moves: 4
+moves: 5
+ret: 2
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 2
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 2
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 2
+moves: 6
+ret: 1
+ret: 2
+moves: 5
+ret: 1
+ret: 1
+moves: 4
+ret: 1
+ret: 2
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 2
+moves: 5
+ret: 2
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 3
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+ret: 2
+moves: 6
+ret: 2
+moves: 6
+ret: 2
+ret: 2
+moves: 5
+ret: 2
+ret: 2
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+ret: 1
+moves: 4
+ret: 1
+ret: 2
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+ret: 2
+moves: 4
+ret: 2
+moves: 4
+moves: 5
+ret: 2
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 2
+ret: 2
+moves: 5
+ret: 2
+moves: 5
+ret: 2
+moves: 5
+ret: 2
+ret: 2
+moves: 4
+ret: 1
+moves: 4
+ret: 1
+ret: 2
+moves: 3
+ret: 1
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 2
+moves: 5
+ret: 1
+moves: 5
+ret: 2
+moves: 5
+ret: 1
+ret: 2
+moves: 4
+ret: 3
+moves: 4
+ret: 2
+moves: 4
+ret: 1
+moves: 4
+ret: 3
+ret: 1
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+ret: 2
+moves: 4
+ret: 1
+moves: 4
+ret: 2
+ret: 2
+ret: 2
+moves: 2
+moves: 3
+ret: 2
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+ret: 2
+moves: 4
+ret: 1
+moves: 4
+ret: 1
+ret: 2
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+ret: 2
+moves: 4
+ret: 1
+moves: 4
+ret: 2
+moves: 4
+ret: 1
+moves: 4
+ret: 1
+ret: 2
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+ret: 2
+moves: 4
+ret: 2
+ret: 2
+ret: 2
+ret: 2
+moves: 1
+moves: 2
+moves: 3
+ret: 2
+moves: 3
+moves: 4
+moves: 5
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+ret: 1
+ret: 3
+moves: 5
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+moves: 8
+ret: 1
+ret: 1
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+ret: 3
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+ret: 1
+ret: 3
+moves: 3
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 2
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+ret: 1
+ret: 3
+moves: 5
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 2
+moves: 7
+ret: 2
+ret: 1
+moves: 6
+moves: 7
+ret: 3
+ret: 1
+ret: 3
+moves: 5
+ret: 3
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+ret: 1
+ret: 3
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 2
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 1
+ret: 3
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 2
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+moves: 7
+ret: 2
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+moves: 5
+ret: 2
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 3
+moves: 5
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+ret: 1
+moves: 4
+moves: 5
+ret: 2
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 3
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+ret: 2
+ret: 1
+ret: 3
+moves: 3
+ret: 1
+moves: 3
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 1
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 2
+ret: 2
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+moves: 5
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+ret: 1
+ret: 2
+moves: 3
+ret: 2
+ret: 1
+moves: 2
+moves: 3
+ret: 2
+moves: 3
+ret: 3
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+moves: 6
+moves: 7
+ret: 1
+moves: 7
+ret: 2
+ret: 2
+moves: 6
+ret: 1
+ret: 2
+moves: 5
+ret: 3
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 2
+moves: 6
+ret: 1
+ret: 1
+moves: 5
+ret: 2
+ret: 2
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+moves: 5
+ret: 3
+moves: 5
+ret: 3
+ret: 1
+ret: 2
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+moves: 6
+ret: 1
+moves: 6
+ret: 1
+ret: 3
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+ret: 1
+ret: 3
+moves: 3
+ret: 2
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+ret: 1
+moves: 4
+moves: 5
+ret: 2
+moves: 5
+ret: 2
+moves: 5
+ret: 2
+moves: 5
+ret: 3
+moves: 5
+ret: 1
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 1
+moves: 5
+ret: 2
+ret: 1
+moves: 4
+ret: 1
+ret: 3
+moves: 3
+ret: 1
+ret: 1
+moves: 2
+moves: 3
+ret: 2
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 1
+moves: 5
+ret: 2
+moves: 5
+ret: 1
+ret: 2
+ret: 2
+moves: 3
+ret: 2
+moves: 3
+moves: 4
+ret: 2
+moves: 4
+ret: 1
+ret: 2
+ret: 2
+moves: 2
+moves: 3
+ret: 2
+moves: 3
+ret: 3
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+moves: 5
+ret: 2
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+moves: 5
+ret: 3
+moves: 5
+ret: 2
+ret: 1
+ret: 3
+moves: 3
+ret: 2
+moves: 3
+ret: 2
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+ret: 1
+moves: 4
+ret: 2
+ret: 2
+moves: 3
+ret: 3
+ret: 1
+moves: 2
+moves: 3
+ret: 1
+moves: 3
+ret: 3
+moves: 3
+ret: 2
+moves: 3
+moves: 4
+ret: 1
+moves: 4
+ret: 2
+moves: 4
+ret: 1
+ret: 2
+ret: 1
+ret: 2
+moves: 1
+moves: 2
+moves: 3
+ret: 3
+moves: 3
+ret: 3
+moves: 3
+ret: 3
+moves: 3
+ret: 2
+ret: 1
+moves: 2
+moves: 3
+ret: 2
+moves: 3
+ret: 2
+moves: 3
+ret: 2
+moves: 3
+ret: 2
+ret: 2
+ret: 2
+ret: 2
+####################
+0
+200
+022
+000
+
+1
+102
+22X
+010
+
+3
+X10
+021
+101
+
+5
+X13
+23O
+322
+
+7
+O13
+12X
+211
+
+11
+212
+23O
+1X3
+
+14
+X11
+12O
+1X1
+
+16
+O10
+01X
+3X1
+
+32
+X01
+11O
+X10
+
+33
+O23
+122
+X33
+
+34
+O12
+11X
+X11
+
+38
+111
+11O
+XX3
+
+42
+O11
+111
+XX1
+
+44
+O33
+13O
+XX3
+
+45
+322
+332
+XO2
+
+46
+111
+12X
+XO1
+
+48
+X11
+111
+XO1
+
+50
+X33
+33O
+XO3
+
+52
+O23
+13X
+XO2
+
+63
+212
+221
+OX1
+
+64
+321
+12X
+OX1
+
+66
+X21
+121
+OX1
+
+68
+X32
+13O
+OX1
+
+70
+O11
+11X
+OX1
+
+76
+X11
+11X
+OO3
+
+81
+200
+0X1
+000
+
+83
+303
+2XO
+030
+
+86
+X11
+1XO
+111
+
+87
+O20
+0X2
+202
+
+88
+O11
+2XX
+111
+
+92
+111
+1XO
+1X1
+
+98
+O33
+2XO
+3X3
+
+104
+X30
+0XO
+3O3
+
+114
+O12
+1X1
+X11
+
+116
+O33
+1XO
+X33
+
+125
+O11
+1XO
+XX1
+
+126
+111
+1X1
+XO1
+
+128
+323
+3XO
+XO3
+
+131
+X11
+1XO
+XO1
+
+132
+O23
+3X3
+XO2
+
+133
+O11
+1XX
+XO1
+
+142
+O01
+3XX
+O10
+
+144
+121
+1X1
+OX1
+
+146
+332
+2XO
+OX3
+
+149
+X11
+1XO
+OX1
+
+150
+O31
+3X1
+OX1
+
+151
+O11
+3XX
+OX1
+
+154
+111
+3XX
+OO3
+
+156
+X11
+1X1
+OO3
+
+157
+X11
+1XX
+OO3
+
+163
+202
+1OX
+020
+
+165
+X20
+0O2
+202
+
+166
+X22
+1OX
+122
+
+172
+110
+0OX
+2X2
+
+176
+X11
+2OO
+1X1
+
+178
+O10
+0OX
+1X3
+
+192
+X01
+2O1
+X10
+
+194
+X01
+3OO
+X10
+
+196
+O11
+1OX
+X13
+
+198
+111
+1O1
+XX2
+
+200
+111
+3OO
+XX3
+
+203
+X11
+3OO
+XX1
+
+204
+O11
+1O1
+XX3
+
+205
+O11
+1OX
+XX3
+
+208
+121
+1OX
+XO1
+
+210
+X31
+3O1
+XO1
+
+211
+X31
+2OX
+XO1
+
+226
+112
+1OX
+OX1
+
+228
+X12
+1O1
+OX1
+
+229
+X23
+1OX
+OX2
+
+272
+11X
+12O
+X11
+
+276
+O1X
+011
+X01
+
+278
+O1X
+23O
+X33
+
+287
+O1X
+11O
+XX1
+
+290
+33X
+03O
+XO1
+
+293
+X1X
+01O
+XO1
+
+297
+30X
+021
+O20
+
+298
+11X
+11X
+O13
+
+300
+X1X
+111
+O11
+
+302
+X3X
+23O
+O23
+
+304
+O1X
+31X
+O13
+
+306
+22X
+121
+OX1
+
+308
+23X
+22O
+OX1
+
+311
+X2X
+11O
+OX1
+
+312
+O1X
+211
+OX1
+
+313
+O1X
+31X
+OX3
+
+316
+11X
+11X
+OO3
+
+318
+X3X
+111
+OO3
+
+319
+X1X
+11X
+OO3
+
+378
+20X
+0X1
+O10
+
+380
+33X
+2XO
+O22
+
+383
+X1X
+1XO
+O11
+
+384
+O1X
+2X1
+O11
+
+385
+O1X
+3XX
+O11
+
+389
+12X
+1XO
+OX1
+
+393
+O2X
+3X1
+OX1
+
+395
+O3X
+2XO
+OX1
+
+396
+11X
+1X1
+OO3
+
+397
+11X
+1XX
+OO3
+
+399
+X1X
+1X1
+OO3
+
+401
+X3X
+1XO
+OO3
+
+403
+O1X
+3XX
+OO3
+
+432
+10X
+0O2
+X00
+
+434
+11X
+2OO
+X11
+
+437
+X1X
+3OO
+X11
+
+438
+O1X
+0O1
+X03
+
+439
+O1X
+1OX
+X13
+
+443
+11X
+3OO
+XX3
+
+449
+O1X
+1OO
+XX3
+
+455
+X3X
+0OO
+XO1
+
+460
+33X
+1OX
+O23
+
+462
+X3X
+2O3
+O23
+
+463
+X1X
+1OX
+O11
+
+468
+21X
+2O2
+OX2
+
+469
+11X
+1OX
+OX2
+
+471
+X2X
+1O1
+OX1
+
+473
+X3X
+2OO
+OX1
+
+475
+O1X
+1OX
+OX3
+
+481
+X3X
+1OX
+OO3
+
+544
+X1O
+13X
+O11
+
+550
+11O
+03X
+OX1
+
+553
+X1O
+03X
+OX1
+
+622
+33O
+3XX
+O33
+
+624
+X3O
+0X3
+O03
+
+625
+X1O
+1XX
+O11
+
+631
+11O
+0XX
+OX1
+
+635
+X3O
+1XO
+OX3
+
+637
+O3O
+0XX
+OX1
+
+740
+1X1
+13O
+0X0
+
+744
+OX1
+131
+1X1
+
+746
+OX1
+23O
+3X3
+
+747
+2X0
+022
+2O0
+
+748
+2X2
+11X
+1O1
+
+750
+XX2
+111
+1O1
+
+752
+XX3
+33O
+3O3
+
+754
+OX1
+22X
+2O2
+
+773
+OX1
+11O
+XX1
+
+774
+2X2
+111
+XO1
+
+776
+3X3
+22O
+XO2
+
+779
+XX1
+11O
+XO1
+
+780
+OX2
+222
+XO2
+
+781
+OX2
+12X
+XO1
+
+798
+OX1
+131
+OX0
+
+799
+OX1
+33X
+OX0
+
+802
+1X1
+11X
+OO3
+
+804
+XX3
+111
+OO3
+
+805
+XX3
+11X
+OO3
+
+828
+2X0
+0X1
+2O0
+
+830
+3X3
+1XO
+2O2
+
+833
+XX1
+1XO
+1O1
+
+834
+OX1
+2X2
+2O2
+
+835
+OX1
+2XX
+1O1
+
+857
+1X2
+1XO
+XO1
+
+861
+OX2
+1X1
+XO1
+
+863
+OX3
+2XO
+XO2
+
+882
+1X1
+1X1
+OO2
+
+883
+1X1
+3XX
+OO3
+
+885
+XX1
+1X1
+OO3
+
+887
+XX3
+1XO
+OO3
+
+889
+OX1
+3XX
+OO1
+
+900
+3X0
+0O3
+0X0
+
+902
+1X1
+1OO
+0X0
+
+905
+XX3
+3OO
+1X1
+
+906
+OX1
+1O1
+1X1
+
+907
+OX3
+3OX
+3X3
+
+910
+2X3
+1OX
+2O2
+
+912
+XX3
+3O2
+3O2
+
+913
+XX2
+1OX
+1O1
+
+933
+OX1
+1O1
+XX3
+
+935
+OX1
+1OO
+XX3
+
+936
+3X2
+2O2
+XO2
+
+937
+2X2
+1OX
+XO1
+
+939
+XX1
+1O1
+XO1
+
+941
+XX3
+3OO
+XO1
+
+943
+OX1
+1OX
+XO2
+
+961
+OX1
+1OX
+OX0
+
+967
+XX3
+1OX
+OO1
+
+974
+1XX
+11O
+111
+
+978
+OXX
+321
+321
+
+980
+OXX
+23O
+111
+
+989
+OXX
+13O
+1X1
+
+992
+3XX
+23O
+3O2
+
+996
+OXX
+111
+2O2
+
+997
+OXX
+11X
+1O3
+
+1007
+OXX
+13O
+X11
+
+1019
+1XX
+11O
+XO1
+
+1023
+OXX
+121
+XO1
+
+1025
+OXX
+23O
+XO2
+
+1028
+3XX
+23O
+O32
+
+1032
+OXX
+111
+O11
+
+1033
+OXX
+31X
+O13
+
+1037
+1XX
+11O
+OX1
+
+1041
+OXX
+331
+OX1
+
+1043
+OXX
+23O
+OX1
+
+1044
+3XX
+111
+OO3
+
+1045
+1XX
+11X
+OO3
+
+1051
+OXX
+11X
+OO3
+
+1061
+OXX
+1XO
+111
+
+1073
+1XX
+1XO
+1O1
+
+1077
+OXX
+1X1
+3O1
+
+1079
+OXX
+2XO
+3O2
+
+1109
+1XX
+1XO
+O11
+
+1113
+OXX
+3X1
+O31
+
+1115
+OXX
+2XO
+O31
+
+1125
+3XX
+1X1
+OO3
+
+1127
+3XX
+1XO
+OO2
+
+1131
+OXX
+1X1
+OO1
+
+1132
+OXX
+3XX
+OO3
+
+1136
+3XX
+2OO
+111
+
+1140
+OXX
+1O1
+112
+
+1141
+OXX
+1OX
+113
+
+1145
+3XX
+3OO
+1X1
+
+1149
+OXX
+3O3
+3X3
+
+1151
+OXX
+1OO
+1X1
+
+1153
+1XX
+1OX
+1O1
+
+1159
+OXX
+1OX
+1O3
+
+1163
+3XX
+3OO
+X11
+
+1167
+OXX
+3O3
+X23
+
+1169
+OXX
+1OO
+X11
+
+1178
+OXX
+3OO
+XX3
+
+1179
+2XX
+1O1
+XO1
+
+1181
+3XX
+2OO
+XO1
+
+1185
+OXX
+1O1
+XO2
+
+1186
+OXX
+1OX
+XO3
+
+1189
+1XX
+0OX
+O10
+
+1195
+OXX
+1OX
+O13
+
+1197
+3XX
+1O1
+OX1
+
+1199
+3XX
+2OO
+OX1
+
+1203
+OXX
+1O1
+OX1
+
+1204
+OXX
+3OX
+OX3
+
+1207
+3XX
+1OX
+OO3
+
+1216
+1XO
+02X
+120
+
+1220
+XXO
+11O
+111
+
+1222
+OXO
+13X
+211
+
+1226
+1XO
+13O
+1X3
+
+1229
+XXO
+13O
+1X3
+
+1230
+OXO
+031
+3X0
+
+1231
+OXO
+13X
+1X1
+
+1234
+1XO
+22X
+2O2
+
+1237
+XXO
+22X
+3O2
+
+1244
+1XO
+11O
+X13
+
+1247
+XXO
+31O
+X13
+
+1248
+OXO
+122
+X32
+
+1249
+OXO
+12X
+X21
+
+1253
+1XO
+11O
+XX3
+
+1257
+OXO
+111
+XX1
+
+1259
+OXO
+13O
+XX3
+
+1260
+2XO
+222
+XO2
+
+1261
+2XO
+22X
+XO1
+
+1263
+XXO
+211
+XO1
+
+1265
+XXO
+31O
+XO3
+
+1267
+OXO
+22X
+XO2
+
+1270
+1XO
+03X
+O10
+
+1272
+XXO
+131
+O11
+
+1273
+XXO
+13X
+O33
+
+1278
+1XO
+031
+OX0
+
+1279
+1XO
+13X
+OX1
+
+1281
+XXO
+131
+OX1
+
+1283
+XXO
+13O
+OX1
+
+1285
+OXO
+13X
+OX1
+
+1291
+XXO
+11X
+OO1
+
+1298
+1XO
+1XO
+133
+
+1301
+XXO
+1XO
+113
+
+1302
+OXO
+0X3
+230
+
+1303
+OXO
+1XX
+111
+
+1315
+1XO
+2XX
+1O1
+
+1319
+XXO
+1XO
+1O3
+
+1321
+OXO
+3XX
+2O2
+
+1325
+1XO
+1XO
+X23
+
+1329
+OXO
+1X1
+X21
+
+1331
+OXO
+1XO
+X32
+
+1341
+2XO
+2X2
+XO2
+
+1343
+1XO
+1XO
+XO2
+
+1346
+XXO
+1XO
+XO3
+
+1347
+OXO
+2X2
+XO2
+
+1348
+OXO
+2XX
+XO1
+
+1351
+1XO
+0XX
+O10
+
+1353
+XXO
+1X1
+O11
+
+1355
+XXO
+1XO
+O33
+
+1357
+OXO
+3XX
+O31
+
+1369
+1XO
+3XX
+OO3
+
+1371
+XXO
+1X1
+OO3
+
+1372
+XXO
+1XX
+OO3
+
+1378
+1XO
+0OX
+210
+
+1381
+XXO
+2OX
+322
+
+1387
+3XO
+2OX
+3X3
+
+1391
+XXO
+1OO
+1X1
+
+1393
+OXO
+1OX
+1X1
+
+1399
+XXO
+1OX
+2O1
+
+1405
+2XO
+0OX
+X20
+
+1407
+XXO
+2O1
+X11
+
+1409
+XXO
+3OO
+X11
+
+1411
+OXO
+1OX
+X12
+
+1415
+1XO
+1OO
+XX3
+
+1418
+XXO
+3OO
+XX3
+
+1419
+OXO
+1O1
+XX3
+
+1420
+OXO
+1OX
+XX3
+
+1423
+2XO
+2OX
+XO2
+
+1425
+XXO
+3O2
+XO2
+
+1426
+XXO
+2OX
+XO1
+
+1480
+XO1
+13X
+1O1
+
+1506
+XO1
+331
+XO0
+
+1507
+XO1
+13X
+XO0
+
+1558
+3O3
+3XX
+0O0
+
+1560
+XO3
+3X3
+3O3
+
+1561
+XO1
+1XX
+1O1
+
+1587
+XO1
+1X1
+XO0
+
+1589
+XO3
+3XO
+XO0
+
+1591
+OO3
+3XX
+XO1
+
+1704
+XOX
+021
+110
+
+1706
+XOX
+23O
+321
+
+1708
+OOX
+33X
+333
+
+1712
+2OX
+22O
+3X2
+
+1715
+XOX
+12O
+2X1
+
+1716
+OOX
+323
+3X3
+
+1717
+OOX
+11X
+1X1
+
+1720
+1OX
+13X
+1O3
+
+1722
+XOX
+031
+1O0
+
+1723
+XOX
+13X
+1O3
+
+1730
+3OX
+03O
+X30
+
+1733
+XOX
+11O
+X11
+
+1734
+OOX
+133
+X33
+
+1735
+OOX
+11X
+X11
+
+1739
+1OX
+11O
+XX1
+
+1743
+OOX
+111
+XX1
+
+1745
+OOX
+33O
+XX3
+
+1746
+1OX
+031
+XO0
+
+1747
+1OX
+13X
+XO1
+
+1749
+XOX
+131
+XO1
+
+1751
+XOX
+33O
+XO1
+
+1753
+OOX
+13X
+XO3
+
+1758
+XOX
+122
+O23
+
+1759
+XOX
+11X
+O12
+
+1765
+1OX
+11X
+OX2
+
+1767
+XOX
+122
+OX2
+
+1769
+XOX
+22O
+OX2
+
+1771
+OOX
+31X
+OX3
+
+1777
+XOX
+11X
+OO3
+
+1784
+3OX
+0XO
+320
+
+1787
+XOX
+1XO
+111
+
+1788
+OOX
+3X3
+323
+
+1789
+OOX
+1XX
+111
+
+1793
+1OX
+1XO
+2X1
+
+1797
+OOX
+1X1
+2X1
+
+1799
+OOX
+2XO
+3X2
+
+1801
+1OX
+1XX
+1O1
+
+1803
+XOX
+0X1
+1O0
+
+1805
+XOX
+3XO
+3O3
+
+1807
+OOX
+3XX
+3O3
+
+1839
+XOX
+1X1
+O12
+
+1841
+XOX
+2XO
+O23
+
+1843
+OOX
+3XX
+O13
+
+1847
+2OX
+2XO
+OX2
+
+1850
+XOX
+1XO
+OX2
+
+1851
+OOX
+2X1
+OX1
+
+1852
+OOX
+3XX
+OX1
+
+1855
+1OX
+3XX
+OO3
+
+1857
+XOX
+1X1
+OO3
+
+1858
+XOX
+1XX
+OO3
+
+1866
+XOX
+0O1
+120
+
+1867
+XOX
+1OX
+132
+
+1873
+1OX
+1OX
+1X2
+
+1875
+XOX
+0O2
+2X0
+
+1877
+XOX
+2OO
+1X1
+
+1879
+OOX
+1OX
+1X3
+
+1893
+XOX
+3O1
+X31
+
+1895
+XOX
+3OO
+X11
+
+1897
+OOX
+1OX
+X13
+
+1901
+1OX
+3OO
+XX3
+
+1904
+XOX
+3OO
+XX1
+
+1905
+OOX
+1O1
+XX3
+
+1906
+OOX
+1OX
+XX3
+
+1921
+XOX
+1OX
+O23
+
+1927
+2OX
+2OX
+OX3
+
+1929
+XOX
+2O2
+OX2
+
+1930
+XOX
+1OX
+OX2
+
+1948
+XOO
+33X
+331
+
+1954
+3OO
+11X
+1X1
+
+1957
+XOO
+11X
+1X1
+
+1974
+XOO
+333
+X33
+
+1975
+XOO
+11X
+X11
+
+1981
+3OO
+11X
+XX2
+
+1983
+XOO
+111
+XX1
+
+1985
+XOO
+31O
+XX3
+
+1993
+XOO
+33X
+XO1
+
+2011
+XOO
+13X
+OX1
+
+2029
+XOO
+1XX
+111
+
+2035
+3OO
+2XX
+1X1
+
+2039
+XOO
+1XO
+1X3
+
+2047
+XOO
+3XX
+3O3
+
+2055
+XOO
+1X1
+X11
+
+2057
+XOO
+3XO
+X13
+
+2063
+1OO
+1XO
+XX3
+
+2066
+XOO
+1XO
+XX3
+
+2071
+3OO
+3XX
+XO1
+
+2073
+XOO
+3X3
+XO3
+
+2074
+XOO
+1XX
+XO1
+
+2083
+XOO
+3XX
+O33
+
+2089
+3OO
+3XX
+OX1
+
+2091
+XOO
+3X3
+OX3
+
+2092
+XOO
+1XX
+OX1
+
+2119
+XOO
+1OX
+3X1
+
+2137
+XOO
+3OX
+X31
+
+2143
+3OO
+1OX
+XX3
+
+2145
+XOO
+3O3
+XX3
+
+2146
+XOO
+1OX
+XX1
+
+2465
+O1X
+11O
+X1X
+
+2477
+11X
+03O
+XOX
+
+2483
+O2X
+03O
+XOX
+
+2490
+O0X
+213
+O1X
+
+2495
+22X
+32O
+OXX
+
+2499
+O1X
+312
+OXX
+
+2501
+O1X
+21O
+OXX
+
+2505
+X1X
+111
+OOX
+
+2507
+X3X
+33O
+OOX
+
+2571
+O0X
+3X2
+O1X
+
+2573
+O0X
+2XO
+O1X
+
+2582
+O2X
+3XO
+OXX
+
+2585
+32X
+2XO
+OOX
+
+2589
+O1X
+2X3
+OOX
+
+2625
+O1X
+0O1
+X0X
+
+2627
+O1X
+2OO
+X3X
+
+2639
+11X
+0OO
+XOX
+
+2642
+X3X
+0OO
+XOX
+
+2657
+11X
+2OO
+OXX
+
+2660
+X2X
+3OO
+OXX
+
+2661
+O1X
+2O3
+OXX
+
+2667
+X3X
+1O3
+OOX
+
+2730
+X0O
+031
+O0X
+
+2731
+X1O
+13X
+O1X
+
+2737
+33O
+03X
+OXX
+
+2741
+X1O
+13O
+OXX
+
+2743
+O1O
+01X
+OXX
+
+2815
+O1O
+3XX
+O1X
+
+2819
+33O
+3XO
+OXX
+
+2824
+O3O
+0XX
+OXX
+
+3179
+2XX
+11O
+1OX
+
+3185
+OXX
+22O
+2OX
+
+3212
+OXX
+12O
+XOX
+
+3230
+OXX
+32O
+OXX
+
+3233
+3XX
+22O
+OOX
+
+3237
+OXX
+213
+OOX
+
+3266
+OXX
+1XO
+2OX
+
+3314
+2XX
+1XO
+OOX
+
+3318
+OXX
+3X2
+OOX
+
+3320
+OXX
+2XO
+OOX
+
+3338
+OXX
+3OO
+2XX
+
+3341
+3XX
+2OO
+1OX
+
+3368
+2XX
+3OO
+XOX
+
+3372
+OXX
+1O2
+XOX
+
+3374
+OXX
+2OO
+XOX
+
+3390
+OXX
+3O2
+OXX
+
+3392
+OXX
+2OO
+OXX
+
+3407
+XXO
+13O
+11X
+
+3409
+OXO
+22X
+32X
+
+3413
+1XO
+11O
+1XX
+
+3419
+OXO
+33O
+3XX
+
+3421
+2XO
+22X
+1OX
+
+3425
+XXO
+33O
+3OX
+
+3427
+OXO
+22X
+2OX
+
+3435
+OXO
+011
+X2X
+
+3437
+OXO
+22O
+X3X
+
+3449
+3XO
+22O
+XOX
+
+3452
+XXO
+11O
+XOX
+
+3453
+OXO
+022
+XOX
+
+3454
+OXO
+22X
+XOX
+
+3461
+XXO
+13O
+O1X
+
+3463
+OXO
+11X
+O1X
+
+3467
+1XO
+13O
+OXX
+
+3470
+XXO
+13O
+OXX
+
+3471
+OXO
+131
+OXX
+
+3472
+OXO
+33X
+OXX
+
+3475
+1XO
+13X
+OOX
+
+3477
+XXO
+131
+OOX
+
+3478
+XXO
+13X
+OOX
+
+3491
+OXO
+2XO
+23X
+
+3503
+3XO
+2XO
+2OX
+
+3508
+OXO
+2XX
+1OX
+
+3518
+OXO
+1XO
+X2X
+
+3530
+2XO
+1XO
+XOX
+
+3534
+OXO
+0X2
+XOX
+
+3536
+OXO
+2XO
+XOX
+
+3543
+OXO
+3X1
+O3X
+
+3544
+OXO
+3XX
+O1X
+
+3556
+1XO
+1XX
+OOX
+
+3562
+OXO
+3XX
+OOX
+
+3569
+XXO
+1OO
+11X
+
+3571
+OXO
+1OX
+21X
+
+3575
+1XO
+1OO
+3XX
+
+3578
+XXO
+3OO
+3XX
+
+3580
+OXO
+1OX
+3XX
+
+3583
+1XO
+1OX
+2OX
+
+3586
+XXO
+2OX
+3OX
+
+3596
+XXO
+3OO
+X1X
+
+3597
+OXO
+0O2
+X3X
+
+3598
+OXO
+1OX
+X2X
+
+3610
+2XO
+2OX
+XOX
+
+3614
+XXO
+3OO
+XOX
+
+3616
+OXO
+2OX
+XOX
+
+3911
+XOX
+13O
+1OX
+
+3938
+XOX
+13O
+XOX
+
+3939
+OOX
+133
+XOX
+
+3989
+3OX
+3XO
+0OX
+
+4141
+3OO
+11X
+3XX
+
+4145
+XOO
+33O
+3XX
+
+4153
+XOO
+13X
+1OX
+
+4163
+XOO
+03O
+X3X
+
+4177
+1OO
+11X
+XOX
+
+4180
+XOO
+13X
+XOX
+
+4195
+1OO
+11X
+OXX
+
+4198
+XOO
+13X
+OXX
+
+4223
+3OO
+1XO
+3XX
+
+4231
+3OO
+3XX
+1OX
+
+4258
+3OO
+1XX
+XOX
+
+4276
+3OO
+1XX
+OXX
+
+4303
+1OO
+1OX
+3XX
+
+4306
+XOO
+1OX
+3XX
+
+4927
+X1O
+03X
+OXO
+
+5005
+33O
+0XX
+OXO
+
+5008
+X1O
+0XX
+OXO
+
+5599
+1XO
+13X
+0XO
+
+5605
+OXO
+13X
+1XO
+
+5611
+XXO
+11X
+2OO
+
+5632
+OXO
+13X
+XXO
+
+5635
+2XO
+32X
+XOO
+
+5638
+XXO
+21X
+XOO
+
+5689
+1XO
+3XX
+2OO
+
+5692
+XXO
+2XX
+3OO
+
+5716
+1XO
+2XX
+XOO
+
+5722
+OXO
+3XX
+XOO
+
+5761
+1XO
+1OX
+0XO
+
+5764
+XXO
+2OX
+3XO
+
+5800
+XXO
+3OX
+XOO
+
+6448
+XOO
+3XX
+XOO
+
+7307
+OX1
+X2O
+1X1
+
+7310
+3X0
+X1O
+2O2
+
+7313
+XX0
+X1O
+1O1
+
+7337
+2X1
+X1O
+XO1
+
+7343
+OX2
+X2O
+XO2
+
+7361
+OX2
+X3O
+OX0
+
+7363
+1X1
+X3X
+OO3
+
+7367
+XX3
+X1O
+OO3
+
+7369
+OX1
+X3X
+OO3
+
+7391
+2X0
+XXO
+2O3
+
+7397
+OX0
+XXO
+2O2
+
+7424
+OX2
+XXO
+XO1
+
+7445
+1X1
+XXO
+OO2
+
+7448
+XX1
+XXO
+OO3
+
+7463
+2X3
+XOO
+0X0
+
+7469
+OX1
+XOO
+1X2
+
+7475
+XX0
+XOO
+3O3
+
+7496
+OX1
+XOO
+XX3
+
+7499
+3X2
+XOO
+XO2
+
+7504
+OX2
+XOX
+XO3
+
+7522
+OX3
+XOX
+OX0
+
+7525
+1X1
+XOX
+OO1
+
+7528
+XX3
+XOX
+OO3
+
+7586
+OXX
+X2O
+XO1
+
+7604
+OXX
+X2O
+OX1
+
+7607
+3XX
+X1O
+OO2
+
+7612
+OXX
+X1X
+OO3
+
+7688
+2XX
+XXO
+OO3
+
+7694
+OXX
+XXO
+OO2
+
+7742
+2XX
+XOO
+XO1
+
+7748
+OXX
+XOO
+XO2
+
+7760
+2XX
+XOO
+OX1
+
+7766
+OXX
+XOO
+OX2
+
+7768
+1XX
+XOX
+OO3
+
+7774
+OXX
+XOX
+OO3
+
+7841
+1XO
+X3O
+OX1
+
+7844
+XXO
+X3O
+OX3
+
+7846
+OXO
+X3X
+OX1
+
+7934
+XXO
+XXO
+OO3
+
+8038
+1O0
+X3X
+0O0
+
+8041
+XO1
+X3X
+1O1
+
+8071
+OO1
+X3X
+XO1
+
+8123
+XO3
+XXO
+3O3
+
+8273
+1OX
+X1O
+2X0
+
+8279
+OOX
+X2O
+3X2
+
+8285
+XOX
+X3O
+3O1
+
+8287
+OOX
+X3X
+1O3
+
+8306
+OOX
+X1O
+XX1
+
+8309
+3OX
+X3O
+XO1
+
+8314
+OOX
+X3X
+XO1
+
+8327
+2OX
+X2O
+OX0
+
+8330
+XOX
+X2O
+OX2
+
+8332
+OOX
+X1X
+OX1
+
+8335
+1OX
+X3X
+OO3
+
+8338
+XOX
+X3X
+OO3
+
+8360
+OOX
+XXO
+2X1
+
+8363
+3OX
+XXO
+3O3
+
+8366
+XOX
+XXO
+1O1
+
+8408
+2OX
+XXO
+OX0
+
+8414
+OOX
+XXO
+OX2
+
+8420
+XOX
+XXO
+OO3
+
+8435
+2OX
+XOO
+3X0
+
+8438
+XOX
+XOO
+2X1
+
+8440
+OOX
+XOX
+1X3
+
+8462
+1OX
+XOO
+XX0
+
+8468
+OOX
+XOO
+XX3
+
+8492
+XOX
+XOO
+OX2
+
+8494
+OOX
+XOX
+OX3
+
+8519
+XOO
+X1O
+3X3
+
+8543
+3OO
+X1O
+XX0
+
+8572
+XOO
+X3X
+OX1
+
+8597
+1OO
+XXO
+1X0
+
+8600
+XOO
+XXO
+1X3
+
+8624
+3OO
+XXO
+XX0
+
+8654
+XOO
+XXO
+OX3
+
+9794
+2XX
+X1O
+OOX
+
+9800
+OXX
+X2O
+OOX
+
+9956
+3XX
+XOO
+OOX
+
+10034
+OXO
+X3O
+OXX
+
+10040
+XXO
+X3O
+OOX
+
+10118
+3XO
+XXO
+OOX
+
+10469
+1OX
+X3O
+0OX
+
+10472
+XOX
+X3O
+1OX
+
+10502
+OOX
+X3O
+XOX
+
+10550
+1OX
+XXO
+0OX
+
+10556
+OOX
+XXO
+3OX
+
+10706
+XOO
+X1O
+1XX
+
+10760
+XOO
+X3O
+OXX
+
+10768
+XOO
+X3X
+OOX
+
+10820
+3OO
+XXO
+XOX
+
+10868
+XOO
+XOO
+3XX
+
+12220
+OXO
+X3X
+OXO
+
+17060
+XOX
+O3O
+XOX
+
+-1
+000
+00“
+000
+
