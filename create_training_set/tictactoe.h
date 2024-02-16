@@ -9,6 +9,7 @@
 typedef struct	s_state
 {
 	int	board;
+	int	symmetry;
 	int	good[9];
 	int	paths[3];
 	int	chances[3];
@@ -39,6 +40,7 @@ int	find(int board, t_state *st);
 
 int	rnd_move(t_state *st);
 void	put_mark(int *board, int pos, int m);
+void	tmp_show(int *good);
 int	max(int *good);
 int	do_move(int pos, t_set *all);
 int	*play(t_set *all);

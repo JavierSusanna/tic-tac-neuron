@@ -54,16 +54,30 @@ int	do_move(int pos, t_set *all)
 	return (new_board);
 }
 
-int	max(int *path)
+void	tmp_show(int *good)
 {
-	int	ret;
+	int	i;
 
-	ret = 0;
-	if (path[1] > path[ret])
-		ret = 1;
-	if (path[2] > path[ret])
-		ret = 2;
-	return (ret);
+	write(1, "8654!\n", 6);
+	i = -1;
+	while (++i < 9)
+		printf("%i ", good[i]);
+	printf("\n");
+}
+
+int	max(int *good)
+{
+	int	i;
+	int	max;
+
+	i = -1;
+	max = -1;
+	while (++i < 9)
+	{
+		if (max < good[i])
+			max = good[i];
+	}
+	return (max);
 }
 
 int	*play(t_set *all)
@@ -71,26 +85,30 @@ int	*play(t_set *all)
 	int	pos;
 	t_state	*state;
 	int	*ans;
+	int	mult;
 
 	printf("moves: %i\n", all->moves);
 	if (all->moves)
 		state = &(all->st[all->box[all->moves - 1]]);
 	else
 		state = &(all->st[0]);
+	if (state->paths[0] || state->paths[1] || state->paths[2])
+		return (state->paths);
 	pos = -1;
 	while (++pos < 9)
 	{
 		if (state->good[pos] != 4)
 			continue;
+/*		mult = multiplicity(pos, all-> */
 		if (won(do_move(pos, all)))
 		{
 			state->good[pos] = 3;
 			state->paths[2]++;
 		}
-		else if (all->board[all->moves - 1] > -1)
-		{/********AQUÍ*********/
+		else if (all->box[all->moves - 1] > -1)
+		{
 			ans = play(all);
-			state->good[pos] = 3 - max(ans);
+			state->good[pos] = 4 - max(all->st[all->box[all->moves - 1]].good);
 			state->paths[0] += ans[2];
 			state->paths[1] += ans[1];
 			state->paths[2] += ans[0];
@@ -102,6 +120,5 @@ int	*play(t_set *all)
 		}
 		all->moves--;
 	}
-	printf("ret: %i\n", 4 - max(state->good));
 	return (state->paths);
 }

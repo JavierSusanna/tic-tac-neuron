@@ -42,6 +42,7 @@ void	show_state(t_state *st)
 		if (pos % 3 == 2)
 			write(1, "\n", 1);
 	}
+	printf("%i loses, %i draws, %i wins\n", st->paths[0], st->paths[1], st->paths[2]);
 	write(1, "\n", 1);
 }
 

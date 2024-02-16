@@ -30,7 +30,7 @@ int	main(void)
 	printf("Wins: %i\nDraws: %i\nLosses: %i\n", ans[2], ans[1], ans[0]);
 	n = -1;
 	printf("####################\n");
-	while (++n < 628)
+	while (++n < 627)
 		show_state(all.st + n);
 	return (0);
 }
