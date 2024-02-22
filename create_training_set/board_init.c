@@ -7,12 +7,17 @@ void	clean_symm(t_state *st)
 	int		new_pos;
 
 	op = 0;
+	st->multiplicity = 1;
 	/*printf("\nCleaning symmetries from board %i\n", st->board);*/
 	while (++op < 8)
 	{
 		if (rearrange(st->board, op) == st->board)
 		{
 	/*		printf("-op %i\n", op);*/
+			if (1 == op || 3 == op)
+				st->multiplicity = 4;
+			else if (1 == st->multiplicity)
+				st->multiplicity = 2;
 			pos = -1;
 			while (++pos < 9)
 			{

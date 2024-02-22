@@ -7,21 +7,6 @@ int	mark(int board, int pos)
 	return (board % 3);
 }
 
-int	multiplicity(int pos, int op)
-{
-	int	ct;
-	int	pos2;
-
-	ct = 0;
-	pos2 = pos;
-	while (!ct || pos2 != pos)
-	{
-		pos2 = apply_symm(pos2, op);
-		ct++;
-	}
-	return (ct);
-}
-
 int	gaps(int board)
 {
 	int 	ct[3] = {0, 0, 0};

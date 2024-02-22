@@ -83,9 +83,9 @@ int	max(int *good)
 int	*play(t_set *all)
 {
 	int	pos;
+	int	mx;
 	t_state	*state;
 	int	*ans;
-	int	mult;
 
 	printf("moves: %i\n", all->moves);
 	if (all->moves)
@@ -99,26 +99,35 @@ int	*play(t_set *all)
 	{
 		if (state->good[pos] != 4)
 			continue;
-/*		mult = multiplicity(pos, all-> */
 		if (won(do_move(pos, all)))
 		{
 			state->good[pos] = 3;
-			state->paths[2]++;
+			state->paths[2] += st->multiplicity;
 		}
 		else if (all->box[all->moves - 1] > -1)
 		{
 			ans = play(all);
 			state->good[pos] = 4 - max(all->st[all->box[all->moves - 1]].good);
-			state->paths[0] += ans[2];
-			state->paths[1] += ans[1];
-			state->paths[2] += ans[0];
+			state->paths[0] += ans[2] * st->multiplicity;
+			state->paths[1] += ans[1] * st->multiplicity;
+			state->paths[2] += ans[0] * st->multiplicity;
 		}
 		else
 		{
 			state->good[pos] = 2;
-			state->paths[1]++;
+			state->paths[1] += st->multiplicity;
 		}
 		all->moves--;
 	}
+	mx = max(state->good);
+	pos = -1;
+	while (++pos < 9)
+	{
+		if (state->good[pos] == mx)
+			state->good[pos] = state1->chance;/****** SEGUIR AQUÍ, PONIENDO LA chance DEL TABLERO SUPERIOR?****/
+		else
+			state->good[pos] = 0;
+	}
+
 	return (state->paths);
 }
