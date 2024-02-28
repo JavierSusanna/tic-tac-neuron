@@ -81,6 +81,6 @@ int	find(int board, t_state *st)
 		ret++;
 	if (st[ret].board == board)
 		return (ret);
-	/*printf("Board %i not found\n", board);*/
+	printf("Board %i not found\n", board);
 	return (-1);
 }

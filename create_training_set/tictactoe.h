@@ -12,7 +12,7 @@ typedef struct	s_state
 	int	multiplicity;
 	int	good[9];
 	int	paths[3];
-	int	chances[3];
+	int	chances[9];
 }		t_state;
 
 typedef struct	s_set
@@ -45,7 +45,8 @@ void	put_mark(int *board, int pos, int m);
 void	tmp_show(int *good);
 int	max(int *good);
 int	do_move(int pos, t_set *all);
-int	*play(t_set *all);
+int	*auto_play(t_set *all);
+void	play(t_set *all);
 
 /* show.c*/
 void	show_board(int board);

@@ -5,7 +5,7 @@ CFLAGS = -Wall -Werror -Wextra -std=c89 #-g -O2 -fsanitize=thread -pthread #-g3 
 INCLUDES = include
 
 DIR_TTTR = ./
-FILES_TTTR = combis board_init board_ctrl board_mgmt game show
+FILES_TTTR = combis board_init board_ctrl board_mgmt auto_game show
 
 FILES_SRC += $(addprefix $(DIR_TTTR), $(FILES_TTTR))
 

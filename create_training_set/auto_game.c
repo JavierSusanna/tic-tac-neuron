@@ -42,13 +42,22 @@ int	do_move(int pos, t_set *all)
 	all->move[all->moves] = pos;
 	new_board = 0;
 	if (all->moves)
+	{
+		printf("all->moves: %d\n", all->moves);
+		printf("prev box: %d\n", all->box[all->moves - 1]);
+		printf("board: %d\n", all->board[all->moves - 1]);
 		new_board = all->st[all->box[all->moves - 1]].board;
-	put_mark(&new_board, pos, all->moves % 2 + 1);
+	}
+	printf("new_board: %d\n", new_board);
 	if (all->moves)
 		new_board = rearrange(new_board, opposite(all->transform[all->moves - 1]));
+	printf("opp-rearg: %d\n", new_board);
+	put_mark(&new_board, pos, (all->moves % 2) + 1);
+	printf("   + mark: %d\n", new_board);
 	all->board[all->moves] = new_board;
 	all->transform[all->moves] = reduce(new_board);
 	new_board = rearrange(new_board, all->transform[all->moves]);
+	printf("  reduced: %d\n\n", new_board);
 	all->box[all->moves] = find(new_board, all->st);
 	all->moves++;
 	return (new_board);
@@ -80,7 +89,7 @@ int	max(int *good)
 	return (max);
 }
 
-int	*play(t_set *all)
+int	*auto_play(t_set *all)
 {
 	int	pos;
 	int	mx;
@@ -102,20 +111,20 @@ int	*play(t_set *all)
 		if (won(do_move(pos, all)))
 		{
 			state->good[pos] = 3;
-			state->paths[2] += st->multiplicity;
+			state->paths[2] += all->st->multiplicity;
 		}
 		else if (all->box[all->moves - 1] > -1)
 		{
-			ans = play(all);
+			ans = auto_play(all);
 			state->good[pos] = 4 - max(all->st[all->box[all->moves - 1]].good);
-			state->paths[0] += ans[2] * st->multiplicity;
-			state->paths[1] += ans[1] * st->multiplicity;
-			state->paths[2] += ans[0] * st->multiplicity;
+			state->paths[0] += ans[2] * all->st->multiplicity;
+			state->paths[1] += ans[1] * all->st->multiplicity;
+			state->paths[2] += ans[0] * all->st->multiplicity;
 		}
 		else
 		{
 			state->good[pos] = 2;
-			state->paths[1] += st->multiplicity;
+			state->paths[1] += all->st->multiplicity;
 		}
 		all->moves--;
 	}
@@ -124,10 +133,47 @@ int	*play(t_set *all)
 	while (++pos < 9)
 	{
 		if (state->good[pos] == mx)
-			state->good[pos] = state1->chance;/****** SEGUIR AQUÍ, PONIENDO LA chance DEL TABLERO SUPERIOR?****/
+			state->chances[pos] = 1;/****** FIRST, SIMPLEST APPROACH ****/
 		else
-			state->good[pos] = 0;
+			state->chances[pos] = 0;
 	}
 
 	return (state->paths);
+}
+
+void play(t_set *all)
+{
+	char	magic[] = "165840327";
+	int	pos;
+	int	brd;
+	int	winner;
+
+	brd = 0;
+	while (valid_board(brd))
+	{
+		show_board(brd);
+		pos = -1;
+		while (pos < 0)
+		{
+			printf("\nPlayer %d, select position: ", (all->moves % 2) + 1);
+			scanf("%d", &pos);
+			printf(" pos %d ", pos);
+			if (pos < 0 || pos > 8 || mark(brd, magic[pos] - '0'))
+			{
+				pos = -1;
+				printf("\nWrong position");
+			}
+		}
+		printf("%d\n\n", magic[pos] - '0');
+		brd = do_move((int) (magic[pos] - '0'), all);
+		brd = all->board[all->moves - 1];
+/*		brd = rearrange(brd, all->transform[all->moves - 1]);*/
+	}
+	show_board(brd);
+	winner = won(brd);
+	if (winner > 0)
+		printf("Player %d won!\n", winner); /*((all->moves - 1) % 2) + 1);*/
+	else
+		printf("The game ended in a draw\n");
+	show_board(all->st[all->box[all->moves - 1]].board);
 }
