@@ -25,6 +25,10 @@ int	main(void)
 	srand(time(NULL));
 	printf("init\n");
 	initialize(all.st);
+	all.moves = 0;
+	all.step[0].board = 0;
+	all.step[0].transform = 0;
+	all.step[0].box = &(all.st[0]);
 	printf("auto_play\n");
 	ans = auto_play(&all);
 	printf("Wins: %i\nDraws: %i\nLosses: %i\n", ans[2], ans[1], ans[0]);
@@ -32,8 +36,8 @@ int	main(void)
 	printf("####################\n");
 	while (++n < 627)
 		show_state(all.st + n);
-	printf("play\n");
-	play(&all);
+	printf("play1\n");
+/*	play(&all);*/
 	return (0);
 }
 /*

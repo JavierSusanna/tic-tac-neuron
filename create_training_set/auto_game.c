@@ -39,27 +39,22 @@ int	do_move(int pos, t_set *all)
 {
 	int	new_board;
 
-	all->move[all->moves] = pos;
-	new_board = 0;
-	if (all->moves)
+	if (mark(all->step[all->moves].board, pos))
 	{
-		printf("all->moves: %d\n", all->moves);
-		printf("prev box: %d\n", all->box[all->moves - 1]);
-		printf("board: %d\n", all->board[all->moves - 1]);
-		new_board = all->st[all->box[all->moves - 1]].board;
+		printf("ERROR: possition not empty.\n");
+		return (-1);
 	}
-	printf("new_board: %d\n", new_board);
-	if (all->moves)
-		new_board = rearrange(new_board, opposite(all->transform[all->moves - 1]));
-	printf("opp-rearg: %d\n", new_board);
+	all->step[all->moves].move = pos;
+	new_board = all->step[all->moves].board;
 	put_mark(&new_board, pos, (all->moves % 2) + 1);
 	printf("   + mark: %d\n", new_board);
-	all->board[all->moves] = new_board;
-	all->transform[all->moves] = reduce(new_board);
-	new_board = rearrange(new_board, all->transform[all->moves]);
-	printf("  reduced: %d\n\n", new_board);
-	all->box[all->moves] = find(new_board, all->st);
 	all->moves++;
+	all->step[all->moves].board = new_board;
+	show_board(new_board);
+	all->step[all->moves].transform = reduce(new_board);
+	new_board = rearrange(new_board, all->step[all->moves].transform);
+	printf("  reduced: %d\n\n", new_board);
+	all->step[all->moves].box = find(new_board, all->st);
 	return (new_board);
 }
 
@@ -97,10 +92,7 @@ int	*auto_play(t_set *all)
 	int	*ans;
 
 	printf("moves: %i\n", all->moves);
-	if (all->moves)
-		state = &(all->st[all->box[all->moves - 1]]);
-	else
-		state = &(all->st[0]);
+	state = all->step[all->moves].box;
 	if (state->paths[0] || state->paths[1] || state->paths[2])
 		return (state->paths);
 	pos = -1;
@@ -111,20 +103,20 @@ int	*auto_play(t_set *all)
 		if (won(do_move(pos, all)))
 		{
 			state->good[pos] = 3;
-			state->paths[2] += all->st->multiplicity;
+			state->paths[2] += state->multiplicity[pos];
 		}
-		else if (all->box[all->moves - 1] > -1)
+		else if (all->step[all->moves].box)
 		{
 			ans = auto_play(all);
-			state->good[pos] = 4 - max(all->st[all->box[all->moves - 1]].good);
-			state->paths[0] += ans[2] * all->st->multiplicity;
-			state->paths[1] += ans[1] * all->st->multiplicity;
-			state->paths[2] += ans[0] * all->st->multiplicity;
+			state->good[pos] = 4 - max(all->step[all->moves].box->good);
+			state->paths[0] += ans[2] * state->multiplicity[pos];
+			state->paths[1] += ans[1] * state->multiplicity[pos];
+			state->paths[2] += ans[0] * state->multiplicity[pos];
 		}
 		else
 		{
 			state->good[pos] = 2;
-			state->paths[1] += all->st->multiplicity;
+			state->paths[1] += state->multiplicity[pos];
 		}
 		all->moves--;
 	}
@@ -155,7 +147,7 @@ void play(t_set *all)
 		pos = -1;
 		while (pos < 0)
 		{
-			printf("\nPlayer %d, select position: ", (all->moves % 2) + 1);
+			printf("\nPlayer %d, select position: ", all->moves % 2 + 1);
 			scanf("%d", &pos);
 			printf(" pos %d ", pos);
 			if (pos < 0 || pos > 8 || mark(brd, magic[pos] - '0'))
@@ -165,8 +157,8 @@ void play(t_set *all)
 			}
 		}
 		printf("%d\n\n", magic[pos] - '0');
-		brd = do_move((int) (magic[pos] - '0'), all);
-		brd = all->board[all->moves - 1];
+		brd = do_move(magic[pos] - '0', all);
+		brd = all->step[all->moves].board;
 /*		brd = rearrange(brd, all->transform[all->moves - 1]);*/
 	}
 	show_board(brd);
@@ -175,5 +167,5 @@ void play(t_set *all)
 		printf("Player %d won!\n", winner); /*((all->moves - 1) % 2) + 1);*/
 	else
 		printf("The game ended in a draw\n");
-	show_board(all->st[all->box[all->moves - 1]].board);
+	show_board(all->step[all->moves].board);
 }

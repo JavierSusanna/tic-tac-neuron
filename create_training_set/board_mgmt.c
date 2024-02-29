@@ -54,33 +54,33 @@ int	revert(int board, int  n)
 
 int	reduce(int board)
 {
-	int	n;
+	int	op;
 	int	min;
-	int	min_n;
+	int	min_op;
 
 	min = board;
-	min_n = 0;
-	n = -1;
-	while (++n < 8)
+	min_op = 0;
+	op = -1;
+	while (++op < 8)
 	{
-		if (rearrange(board, n) < min)
+		if (rearrange(board, op) < min)
 		{
-			min_n = n;
-			min = rearrange(board, n);
+			min_op = op;
+			min = rearrange(board, op);
 		}
 	}
-	return (min_n);
+	return (min_op);
 }
 
-int	find(int board, t_state *st)
+t_state	*find(int board, t_state *st)
 {
-	int	ret;
+	t_state	*ret;
 
-	ret = 0;
-	while (st[ret].board != board && st[ret].board != -1)
+	ret = st;
+	while (ret->min_brd != board && ret->min_brd != -1)
 		ret++;
-	if (st[ret].board == board)
+	if (ret->min_brd == board)
 		return (ret);
 	printf("Board %i not found\n", board);
-	return (-1);
+	return (NULL);
 }

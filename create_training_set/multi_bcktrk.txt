@@ -1,0 +1,6628 @@
+init
+board 0, op 7: pos 0 => 8
+board 0, op 7: pos 1 => 5
+board 0, op 7: pos 2 => 2
+board 0, op 7: pos 3 => 7
+board 0, op 7: pos 4 => 4
+board 0, op 7: pos 5 => 1
+board 0, op 7: pos 6 => 6
+board 0, op 7: pos 7 => 3
+board 0, op 7: pos 8 => 0
+board 0, op 6: pos 0 => 6
+board 0, op 6: pos 1 => 7
+board 0, op 6: pos 2 => 8
+board 0, op 6: pos 3 => 3
+board 0, op 6: pos 4 => 4
+board 0, op 6: pos 5 => 5
+board 0, op 6: pos 6 => 0
+board 0, op 6: pos 7 => 1
+board 0, op 6: pos 8 => 2
+board 0, op 5: pos 0 => 0
+board 0, op 5: pos 1 => 3
+board 0, op 5: pos 2 => 6
+board 0, op 5: pos 3 => 1
+board 0, op 5: pos 4 => 4
+board 0, op 5: pos 5 => 7
+board 0, op 5: pos 6 => 2
+board 0, op 5: pos 7 => 5
+board 0, op 5: pos 8 => 8
+board 0, op 4: pos 0 => 2
+board 0, op 4: pos 1 => 1
+board 0, op 4: pos 2 => 0
+board 0, op 4: pos 3 => 5
+board 0, op 4: pos 4 => 4
+board 0, op 4: pos 5 => 3
+board 0, op 4: pos 6 => 8
+board 0, op 4: pos 7 => 7
+board 0, op 4: pos 8 => 6
+board 0, op 3: pos 0 => 2
+board 0, op 3: pos 1 => 5
+board 0, op 3: pos 2 => 8
+board 0, op 3: pos 3 => 1
+board 0, op 3: pos 4 => 4
+board 0, op 3: pos 5 => 7
+board 0, op 3: pos 6 => 0
+board 0, op 3: pos 7 => 3
+board 0, op 3: pos 8 => 6
+board 0, op 2: pos 0 => 8
+board 0, op 2: pos 1 => 7
+board 0, op 2: pos 2 => 6
+board 0, op 2: pos 3 => 5
+board 0, op 2: pos 4 => 4
+board 0, op 2: pos 5 => 3
+board 0, op 2: pos 6 => 2
+board 0, op 2: pos 7 => 1
+board 0, op 2: pos 8 => 0
+board 0, op 1: pos 0 => 6
+board 0, op 1: pos 1 => 3
+board 0, op 1: pos 2 => 0
+board 0, op 1: pos 3 => 7
+board 0, op 1: pos 4 => 4
+board 0, op 1: pos 5 => 1
+board 0, op 1: pos 6 => 8
+board 0, op 1: pos 7 => 5
+board 0, op 1: pos 8 => 2
+auto_play
+moves: 0
+new_board: 0
+opp-rearg: 0
+   + mark: 1
+1
+...
+..X
+...
+
+  reduced: 1
+
+moves: 1
+all->moves: 1
+prev box: 1
+board: 1
+new_board: 1
+opp-rearg: 1
+   + mark: 7
+7
+O..
+..X
+...
+
+  reduced: 7
+
+moves: 2
+all->moves: 2
+prev box: 4
+board: 7
+new_board: 7
+opp-rearg: 7
+   + mark: 16
+16
+O..
+..X
+.X.
+
+  reduced: 16
+
+moves: 3
+all->moves: 3
+prev box: 7
+board: 16
+new_board: 16
+opp-rearg: 16
+   + mark: 70
+70
+O..
+..X
+OX.
+
+  reduced: 70
+
+moves: 4
+all->moves: 4
+prev box: 23
+board: 70
+new_board: 70
+opp-rearg: 70
+   + mark: 151
+151
+O..
+.XX
+OX.
+
+  reduced: 151
+
+moves: 5
+all->moves: 5
+prev box: 46
+board: 151
+new_board: 151
+opp-rearg: 151
+   + mark: 637
+637
+O.O
+.XX
+OX.
+
+  reduced: 637
+
+moves: 6
+all->moves: 6
+prev box: 127
+board: 637
+new_board: 637
+opp-rearg: 637
+   + mark: 1366
+1366
+OXO
+.XX
+OX.
+
+  reduced: 1366
+
+Board 1366 not found
+all->moves: 6
+prev box: 127
+board: 637
+new_board: 637
+opp-rearg: 637
+   + mark: 2824
+2824
+O.O
+.XX
+OXX
+
+  reduced: 2824
+
+moves: 7
+all->moves: 7
+prev box: 435
+board: 2824
+new_board: 2824
+opp-rearg: 2824
+   + mark: 4282
+4282
+OOO
+.XX
+OXX
+
+  reduced: 4282
+
+Board 4282 not found
+all->moves: 5
+prev box: 46
+board: 151
+new_board: 151
+opp-rearg: 151
+   + mark: 1609
+1609
+OO.
+.XX
+OX.
+
+  reduced: 889
+
+moves: 6
+all->moves: 6
+prev box: 159
+board: 1609
+new_board: 889
+opp-rearg: 1609
+   + mark: 1852
+1852
+OOX
+.XX
+OX.
+
+  reduced: 1852
+
+moves: 7
+all->moves: 7
+prev box: 355
+board: 1852
+new_board: 1852
+opp-rearg: 1852
+   + mark: 6226
+6226
+OOX
+.XX
+OXO
+
+  reduced: 3562
+
+moves: 8
+all->moves: 8
+prev box: 485
+board: 6226
+new_board: 3562
+opp-rearg: 6226
+   + mark: 12787
+12787
+OOX
+XXX
+OXO
+
+  reduced: 10115
+
+Board 10115 not found
+all->moves: 7
+prev box: 355
+board: 1852
+new_board: 1852
+opp-rearg: 1852
+   + mark: 14974
+14974
+OOX
+OXX
+OX.
+
+  reduced: 10790
+
+Board 10790 not found
+all->moves: 6
+prev box: 159
+board: 1609
+new_board: 889
+opp-rearg: 1609
+   + mark: 3796
+3796
+OO.
+.XX
+OXX
+
+  reduced: 1132
+
+moves: 7
+all->moves: 7
+prev box: 207
+board: 3796
+new_board: 1132
+opp-rearg: 3796
+   + mark: 8170
+8170
+OO.
+XXX
+OX.
+
+  reduced: 7450
+
+Board 7450 not found
+all->moves: 7
+prev box: 207
+board: 3796
+new_board: 1132
+opp-rearg: 3796
+   + mark: 16918
+16918
+OO.
+OXX
+OXX
+
+  reduced: 8630
+
+Board 8630 not found
+all->moves: 6
+prev box: 159
+board: 1609
+new_board: 889
+opp-rearg: 1609
+   + mark: 8170
+8170
+OO.
+XXX
+OX.
+
+  reduced: 7450
+
+Board 7450 not found
+all->moves: 5
+prev box: 46
+board: 151
+new_board: 151
+opp-rearg: 151
+   + mark: 4525
+4525
+O..
+.XX
+OXO
+
+  reduced: 1357
+
+moves: 6
+all->moves: 6
+prev box: 279
+board: 4525
+new_board: 1357
+opp-rearg: 4525
+   + mark: 4534
+4534
+O..
+.XX
+OOO
+
+  reduced: 2086
+
+Board 2086 not found
+all->moves: 6
+prev box: 279
+board: 4525
+new_board: 1357
+opp-rearg: 4525
+   + mark: 6712
+6712
+O..
+XXX
+OX.
+
+  reduced: 1312
+
+Board 1312 not found
+all->moves: 6
+prev box: 279
+board: 4525
+new_board: 1357
+opp-rearg: 4525
+   + mark: 11086
+11086
+O..
+XXX
+OXO
+
+  reduced: 5686
+
+Board 5686 not found
+all->moves: 5
+prev box: 46
+board: 151
+new_board: 151
+opp-rearg: 151
+   + mark: 13273
+13273
+O..
+OXX
+OX.
+
+  reduced: 2041
+
+Board 2041 not found
+all->moves: 4
+prev box: 23
+board: 70
+new_board: 70
+opp-rearg: 70
+   + mark: 313
+313
+O.X
+..X
+OX.
+
+  reduced: 313
+
+moves: 5
+all->moves: 5
+prev box: 85
+board: 313
+new_board: 313
+opp-rearg: 313
+   + mark: 475
+475
+O.X
+.OX
+OX.
+
+  reduced: 475
+
+moves: 6
+all->moves: 6
+prev box: 117
+board: 475
+new_board: 475
+opp-rearg: 475
+   + mark: 1204
+1204
+OXX
+.OX
+OX.
+
+  reduced: 1204
+
+moves: 7
+all->moves: 7
+prev box: 229
+board: 1204
+new_board: 1204
+opp-rearg: 1204
+   + mark: 5578
+5578
+OXX
+.OX
+OXO
+
+  reduced: 3634
+
+Board 3634 not found
+all->moves: 7
+prev box: 229
+board: 1204
+new_board: 1204
+opp-rearg: 1204
+   + mark: 14326
+14326
+OXX
+OOX
+OX.
+
+  reduced: 8710
+
+Board 8710 not found
+all->moves: 6
+prev box: 117
+board: 475
+new_board: 475
+opp-rearg: 475
+   + mark: 2662
+2662
+O.X
+.OX
+OXX
+
+  reduced: 2662
+
+Board 2662 not found
+all->moves: 6
+prev box: 117
+board: 475
+new_board: 475
+opp-rearg: 475
+   + mark: 7036
+7036
+O.X
+XOX
+OX.
+
+  reduced: 1420
+
+moves: 7
+all->moves: 7
+prev box: 296
+board: 7036
+new_board: 1420
+opp-rearg: 7036
+   + mark: 11410
+11410
+O.X
+XOX
+OXO
+
+  reduced: 5794
+
+Board 5794 not found
+all->moves: 7
+prev box: 296
+board: 7036
+new_board: 1420
+opp-rearg: 7036
+   + mark: 20158
+20158
+O.X
+.OX
+OX.
+
+  reduced: 691
+
+Board 691 not found
+all->moves: 5
+prev box: 85
+board: 313
+new_board: 313
+opp-rearg: 313
+   + mark: 1771
+1771
+OOX
+..X
+OX.
+
+  reduced: 1771
+
+moves: 6
+all->moves: 6
+prev box: 336
+board: 1771
+new_board: 1771
+opp-rearg: 1771
+   + mark: 1852
+1852
+OOX
+.XX
+OX.
+
+  reduced: 1852
+
+moves: 7
+all->moves: 6
+prev box: 336
+board: 1771
+new_board: 1771
+opp-rearg: 1771
+   + mark: 3958
+3958
+OOX
+..X
+OXX
+
+  reduced: 3238
+
+Board 3238 not found
+all->moves: 6
+prev box: 336
+board: 1771
+new_board: 1771
+opp-rearg: 1771
+   + mark: 8332
+8332
+OOX
+X.X
+OX.
+
+  reduced: 8332
+
+moves: 7
+all->moves: 7
+prev box: 586
+board: 8332
+new_board: 8332
+opp-rearg: 8332
+   + mark: 8494
+8494
+OOX
+XOX
+OX.
+
+  reduced: 8494
+
+moves: 8
+all->moves: 8
+prev box: 601
+board: 8494
+new_board: 8494
+opp-rearg: 8494
+   + mark: 10681
+10681
+OOX
+XOX
+OXX
+
+  reduced: 9961
+
+Board 9961 not found
+all->moves: 7
+prev box: 586
+board: 8332
+new_board: 8332
+opp-rearg: 8332
+   + mark: 12706
+12706
+OOX
+X.X
+OXO
+
+  reduced: 10034
+
+moves: 8
+all->moves: 8
+prev box: 612
+board: 12706
+new_board: 10034
+opp-rearg: 12706
+   + mark: 12787
+12787
+OOX
+XXX
+OXO
+
+  reduced: 10115
+
+Board 10115 not found
+all->moves: 5
+prev box: 85
+board: 313
+new_board: 313
+opp-rearg: 313
+   + mark: 4687
+4687
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 6
+all->moves: 6
+prev box: 467
+board: 4687
+new_board: 3463
+opp-rearg: 4687
+   + mark: 4696
+4696
+O.X
+..X
+OOO
+
+  reduced: 4192
+
+Board 4192 not found
+all->moves: 6
+prev box: 467
+board: 4687
+new_board: 3463
+opp-rearg: 4687
+   + mark: 4768
+4768
+O.X
+.XX
+OXO
+
+  reduced: 3544
+
+moves: 7
+all->moves: 7
+prev box: 483
+board: 4768
+new_board: 3544
+opp-rearg: 4768
+   + mark: 4786
+4786
+O.X
+.OX
+..O
+
+  reduced: 1434
+
+Board 1434 not found
+all->moves: 7
+prev box: 483
+board: 4768
+new_board: 3544
+opp-rearg: 4768
+   + mark: 17890
+17890
+O.X
+OXX
+OXO
+
+  reduced: 5746
+
+Board 5746 not found
+all->moves: 6
+prev box: 467
+board: 4687
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 7
+all->moves: 7
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 11410
+11410
+O.X
+XOX
+OXO
+
+  reduced: 5794
+
+Board 5794 not found
+all->moves: 7
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 8
+all->moves: 8
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 9
+all->moves: 9
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 10
+all->moves: 10
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 11
+all->moves: 11
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 12
+all->moves: 12
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 13
+all->moves: 13
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 14
+all->moves: 14
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 15
+all->moves: 15
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 16
+all->moves: 16
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 17
+all->moves: 17
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 18
+all->moves: 18
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 19
+all->moves: 19
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 20
+all->moves: 20
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 21
+all->moves: 21
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 22
+all->moves: 22
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 23
+all->moves: 23
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 24
+all->moves: 24
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 25
+all->moves: 25
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 26
+all->moves: 26
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 27
+all->moves: 27
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 28
+all->moves: 28
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 29
+all->moves: 29
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 30
+all->moves: 30
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 31
+all->moves: 31
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 32
+all->moves: 32
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 33
+all->moves: 33
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 34
+all->moves: 34
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 35
+all->moves: 35
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 36
+all->moves: 36
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 37
+all->moves: 37
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 38
+all->moves: 38
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 39
+all->moves: 39
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 40
+all->moves: 40
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 41
+all->moves: 41
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 42
+all->moves: 42
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 43
+all->moves: 43
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 44
+all->moves: 44
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 45
+all->moves: 45
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 46
+all->moves: 46
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 47
+all->moves: 47
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 48
+all->moves: 48
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 49
+all->moves: 49
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 50
+all->moves: 50
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 51
+all->moves: 51
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 52
+all->moves: 52
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 53
+all->moves: 53
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 54
+all->moves: 54
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 55
+all->moves: 55
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 56
+all->moves: 56
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 57
+all->moves: 57
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 58
+all->moves: 58
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 59
+all->moves: 59
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 60
+all->moves: 60
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 61
+all->moves: 61
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 62
+all->moves: 62
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 63
+all->moves: 63
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 64
+all->moves: 64
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 65
+all->moves: 65
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 66
+all->moves: 66
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 67
+all->moves: 67
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 68
+all->moves: 68
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 69
+all->moves: 69
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 70
+all->moves: 70
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 71
+all->moves: 71
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 72
+all->moves: 72
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 73
+all->moves: 73
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 74
+all->moves: 74
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 75
+all->moves: 75
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 76
+all->moves: 76
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 77
+all->moves: 77
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 78
+all->moves: 78
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 79
+all->moves: 79
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 80
+all->moves: 80
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 81
+all->moves: 81
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 82
+all->moves: 82
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 83
+all->moves: 83
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 84
+all->moves: 84
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 85
+all->moves: 85
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 86
+all->moves: 86
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 87
+all->moves: 87
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 88
+all->moves: 88
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 89
+all->moves: 89
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 90
+all->moves: 90
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 91
+all->moves: 91
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 92
+all->moves: 92
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 93
+all->moves: 93
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 94
+all->moves: 94
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 95
+all->moves: 95
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 96
+all->moves: 96
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 97
+all->moves: 97
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 98
+all->moves: 98
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 99
+all->moves: 99
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 100
+all->moves: 100
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 101
+all->moves: 101
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 102
+all->moves: 102
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 103
+all->moves: 103
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 104
+all->moves: 104
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 105
+all->moves: 105
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 106
+all->moves: 106
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 107
+all->moves: 107
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 108
+all->moves: 108
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 109
+all->moves: 109
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 110
+all->moves: 110
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 111
+all->moves: 111
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 112
+all->moves: 112
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 113
+all->moves: 113
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 114
+all->moves: 114
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 115
+all->moves: 115
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 116
+all->moves: 116
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 117
+all->moves: 117
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 118
+all->moves: 118
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 119
+all->moves: 119
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 120
+all->moves: 120
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 121
+all->moves: 121
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 122
+all->moves: 122
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 123
+all->moves: 123
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 124
+all->moves: 124
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 125
+all->moves: 125
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 126
+all->moves: 126
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 127
+all->moves: 127
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 128
+all->moves: 128
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 129
+all->moves: 129
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 130
+all->moves: 130
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 131
+all->moves: 131
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 132
+all->moves: 132
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 133
+all->moves: 133
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 134
+all->moves: 134
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 135
+all->moves: 135
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 136
+all->moves: 136
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 137
+all->moves: 137
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 138
+all->moves: 138
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 139
+all->moves: 139
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 140
+all->moves: 140
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 141
+all->moves: 141
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 142
+all->moves: 142
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 143
+all->moves: 143
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 144
+all->moves: 144
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 145
+all->moves: 145
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 146
+all->moves: 146
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 147
+all->moves: 147
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 148
+all->moves: 148
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 149
+all->moves: 149
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 150
+all->moves: 150
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 151
+all->moves: 151
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 152
+all->moves: 152
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 153
+all->moves: 153
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 154
+all->moves: 154
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 155
+all->moves: 155
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 156
+all->moves: 156
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 157
+all->moves: 157
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 158
+all->moves: 158
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 159
+all->moves: 159
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 160
+all->moves: 160
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 161
+all->moves: 161
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 162
+all->moves: 162
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 163
+all->moves: 163
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 164
+all->moves: 164
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 165
+all->moves: 165
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 166
+all->moves: 166
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 167
+all->moves: 167
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 168
+all->moves: 168
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 169
+all->moves: 169
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 170
+all->moves: 170
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 171
+all->moves: 171
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 172
+all->moves: 172
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 173
+all->moves: 173
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 174
+all->moves: 174
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 175
+all->moves: 175
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 176
+all->moves: 176
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 177
+all->moves: 177
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 178
+all->moves: 178
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 179
+all->moves: 179
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 180
+all->moves: 180
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 181
+all->moves: 181
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 182
+all->moves: 182
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 183
+all->moves: 183
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 184
+all->moves: 184
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 185
+all->moves: 185
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 186
+all->moves: 186
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 187
+all->moves: 187
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 188
+all->moves: 188
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 189
+all->moves: 189
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 190
+all->moves: 190
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 191
+all->moves: 191
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 192
+all->moves: 192
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 193
+all->moves: 193
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 194
+all->moves: 194
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 195
+all->moves: 195
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 196
+all->moves: 196
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 197
+all->moves: 197
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 198
+all->moves: 198
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 199
+all->moves: 199
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 200
+all->moves: 200
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 201
+all->moves: 201
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 202
+all->moves: 202
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 203
+all->moves: 203
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 204
+all->moves: 204
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 205
+all->moves: 205
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 206
+all->moves: 206
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 207
+all->moves: 207
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 208
+all->moves: 208
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 209
+all->moves: 209
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 210
+all->moves: 210
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 211
+all->moves: 211
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 212
+all->moves: 212
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 213
+all->moves: 213
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 214
+all->moves: 214
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 215
+all->moves: 215
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 216
+all->moves: 216
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 217
+all->moves: 217
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 218
+all->moves: 218
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 219
+all->moves: 219
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 220
+all->moves: 220
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 221
+all->moves: 221
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 222
+all->moves: 222
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 223
+all->moves: 223
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 224
+all->moves: 224
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 225
+all->moves: 225
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 226
+all->moves: 226
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 227
+all->moves: 227
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 228
+all->moves: 228
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 229
+all->moves: 229
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 230
+all->moves: 230
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 231
+all->moves: 231
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 232
+all->moves: 232
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 233
+all->moves: 233
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 234
+all->moves: 234
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 235
+all->moves: 235
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 236
+all->moves: 236
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 237
+all->moves: 237
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 238
+all->moves: 238
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 239
+all->moves: 239
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 240
+all->moves: 240
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 241
+all->moves: 241
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 242
+all->moves: 242
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 243
+all->moves: 243
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 244
+all->moves: 244
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 245
+all->moves: 245
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 246
+all->moves: 246
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 247
+all->moves: 247
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 248
+all->moves: 248
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 249
+all->moves: 249
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 250
+all->moves: 250
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 251
+all->moves: 251
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 252
+all->moves: 252
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 253
+all->moves: 253
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 254
+all->moves: 254
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 255
+all->moves: 255
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 256
+all->moves: 256
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 257
+all->moves: 257
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 258
+all->moves: 258
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 259
+all->moves: 259
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 260
+all->moves: 260
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 261
+all->moves: 261
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 262
+all->moves: 262
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 263
+all->moves: 263
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 264
+all->moves: 264
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 265
+all->moves: 265
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 266
+all->moves: 266
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 267
+all->moves: 267
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 268
+all->moves: 268
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 269
+all->moves: 269
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 270
+all->moves: 270
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 271
+all->moves: 271
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 272
+all->moves: 272
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 273
+all->moves: 273
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 274
+all->moves: 274
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 275
+all->moves: 275
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 276
+all->moves: 276
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 277
+all->moves: 277
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 278
+all->moves: 278
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 279
+all->moves: 279
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 280
+all->moves: 280
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 281
+all->moves: 281
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 282
+all->moves: 282
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 283
+all->moves: 283
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 284
+all->moves: 284
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 285
+all->moves: 285
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 286
+all->moves: 286
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 287
+all->moves: 287
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 288
+all->moves: 288
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 289
+all->moves: 289
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 290
+all->moves: 290
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 291
+all->moves: 291
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 292
+all->moves: 292
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 293
+all->moves: 293
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 294
+all->moves: 294
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 295
+all->moves: 295
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 296
+all->moves: 296
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 297
+all->moves: 297
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 298
+all->moves: 298
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 299
+all->moves: 299
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 300
+all->moves: 300
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 301
+all->moves: 301
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 302
+all->moves: 302
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 303
+all->moves: 303
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 304
+all->moves: 304
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 305
+all->moves: 305
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 306
+all->moves: 306
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 307
+all->moves: 307
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 308
+all->moves: 308
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 309
+all->moves: 309
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 310
+all->moves: 310
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 311
+all->moves: 311
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 312
+all->moves: 312
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 313
+all->moves: 313
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 314
+all->moves: 314
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 315
+all->moves: 315
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 316
+all->moves: 316
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 317
+all->moves: 317
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 318
+all->moves: 318
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 319
+all->moves: 319
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 320
+all->moves: 320
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 321
+all->moves: 321
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 322
+all->moves: 322
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 323
+all->moves: 323
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 324
+all->moves: 324
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 325
+all->moves: 325
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 326
+all->moves: 326
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 327
+all->moves: 327
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 328
+all->moves: 328
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 329
+all->moves: 329
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 330
+all->moves: 330
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 331
+all->moves: 331
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 332
+all->moves: 332
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 333
+all->moves: 333
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 334
+all->moves: 334
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 335
+all->moves: 335
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 336
+all->moves: 336
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 337
+all->moves: 337
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 338
+all->moves: 338
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 339
+all->moves: 339
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 340
+all->moves: 340
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 341
+all->moves: 341
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 342
+all->moves: 342
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 343
+all->moves: 343
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 344
+all->moves: 344
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 345
+all->moves: 345
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 346
+all->moves: 346
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 347
+all->moves: 347
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 348
+all->moves: 348
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 349
+all->moves: 349
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 350
+all->moves: 350
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 351
+all->moves: 351
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 352
+all->moves: 352
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 353
+all->moves: 353
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 354
+all->moves: 354
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 355
+all->moves: 355
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 356
+all->moves: 356
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 357
+all->moves: 357
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 358
+all->moves: 358
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 359
+all->moves: 359
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 360
+all->moves: 360
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 361
+all->moves: 361
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 362
+all->moves: 362
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 363
+all->moves: 363
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 364
+all->moves: 364
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 365
+all->moves: 365
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 366
+all->moves: 366
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 367
+all->moves: 367
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 368
+all->moves: 368
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 369
+all->moves: 369
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 370
+all->moves: 370
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 371
+all->moves: 371
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 372
+all->moves: 372
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 373
+all->moves: 373
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 374
+all->moves: 374
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 375
+all->moves: 375
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 376
+all->moves: 376
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 377
+all->moves: 377
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 378
+all->moves: 378
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 379
+all->moves: 379
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 380
+all->moves: 380
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 381
+all->moves: 381
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 382
+all->moves: 382
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 383
+all->moves: 383
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 384
+all->moves: 384
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 385
+all->moves: 385
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 386
+all->moves: 386
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 387
+all->moves: 387
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 388
+all->moves: 388
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 389
+all->moves: 389
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 390
+all->moves: 390
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 391
+all->moves: 391
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 392
+all->moves: 392
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 393
+all->moves: 393
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 394
+all->moves: 394
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 395
+all->moves: 395
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 396
+all->moves: 396
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 397
+all->moves: 397
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 398
+all->moves: 398
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 399
+all->moves: 399
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 400
+all->moves: 400
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 401
+all->moves: 401
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 402
+all->moves: 402
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 403
+all->moves: 403
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 404
+all->moves: 404
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 405
+all->moves: 405
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 406
+all->moves: 406
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 407
+all->moves: 407
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 408
+all->moves: 408
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 409
+all->moves: 409
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 410
+all->moves: 410
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 411
+all->moves: 411
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 412
+all->moves: 412
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 413
+all->moves: 413
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 414
+all->moves: 414
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 415
+all->moves: 415
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 416
+all->moves: 416
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 417
+all->moves: 417
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 418
+all->moves: 418
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 419
+all->moves: 419
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 420
+all->moves: 420
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 421
+all->moves: 421
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 422
+all->moves: 422
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 423
+all->moves: 423
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 424
+all->moves: 424
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 425
+all->moves: 425
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 426
+all->moves: 426
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+
+moves: 427
+all->moves: 427
+prev box: 523
+board: 11248
+new_board: 5632
+opp-rearg: 11248
+   + mark: 24370
+24370
+O.X
+..X
+OXO
+
+  reduced: 3463
+
+moves: 428
+all->moves: 428
+prev box: 467
+board: 24370
+new_board: 3463
+opp-rearg: 4687
+   + mark: 11248
+11248
+O.X
+X.X
+OXO
+
+  reduced: 5632
+

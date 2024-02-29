@@ -6,23 +6,28 @@ void	clean_symm(t_state *st)
 	int		pos;
 	int		new_pos;
 
-	op = 0;
-	st->multiplicity = 1;
 	/*printf("\nCleaning symmetries from board %i\n", st->board);*/
-	while (++op < 8)
+	pos = -1;
+	while (++pos < 9)
+		st->multiplicity[pos] = 0;
+	op = 8;
+	while (--op > 0)
 	{
-		if (rearrange(st->board, op) == st->board)
+		if (rearrange(st->min_brd, op) == st->min_brd)
 		{
 	/*		printf("-op %i\n", op);*/
-			if (1 == op || 3 == op)
-				st->multiplicity = 4;
-			else if (1 == st->multiplicity)
-				st->multiplicity = 2;
 			pos = -1;
 			while (++pos < 9)
 			{
 				new_pos = apply_symm(pos, op);
-	/*			printf(" >pos %i => %i\n", pos, new_pos);*/
+				if (!st->min_brd)
+					printf("board 0, op %i: pos %i => %i\n", op, pos, new_pos);
+				if (new_pos == pos)
+					st->multiplicity[pos] = 1;
+				else if (1 == op || 3 == op)
+					st->multiplicity[pos] = 4;
+				else
+					st->multiplicity[pos] = 2;
 				if (new_pos > pos)
 					st->good[new_pos] = 0;
 			}
@@ -47,7 +52,7 @@ void	initialize(t_state *st)
 	{
 		if (valid_board(id) <= 0)
 			continue ;
-		st->board = id;
+		st->min_brd = id;
 		pos = -1;
 		while (++pos < 9)
 		{
@@ -62,5 +67,5 @@ void	initialize(t_state *st)
 		st->paths[2] = 0;
 		st++;
 	}
-	st->board = -1;	
+	st->min_brd = -1;	
 }

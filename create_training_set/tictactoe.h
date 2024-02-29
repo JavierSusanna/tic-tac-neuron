@@ -8,21 +8,26 @@
 
 typedef struct	s_state
 {
-	int	board;
-	int	multiplicity;
+	int	min_brd;
+	int	multiplicity[9];
 	int	good[9];
 	int	paths[3];
 	int	chances[9];
 }		t_state;
 
+typedef struct	s_level
+{
+	int	board;
+	int	transform;
+	t_state	*box;
+	int	move;
+}		t_level;
+
 typedef struct	s_set
 {
 	t_state	st[628];
 	int	moves;
-	int	move[9];
-	int	board[9];
-	int	transform[9];
-	int	box[9];
+	t_level	step[9];
 }		t_set;
 
 /* board_ctrl.c*/
@@ -37,7 +42,7 @@ int	apply_symm(int pos, int  op);
 int	rearrange(int board, int  op);
 int	opposite(int sym_op);
 int	reduce(int board);
-int	find(int board, t_state *st);
+t_state	*find(int board, t_state *st);
 
 /* game.c*/
 int	rnd_move(t_state *st);

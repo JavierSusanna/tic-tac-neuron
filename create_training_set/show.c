@@ -27,11 +27,11 @@ void	show_state(t_state *st)
 	char	val;
 	int		m;
 
-	printf("%d\n", st->board);
+	printf("%d\n", st->min_brd);
 	pos = -1;
 	while (++pos < 9)
 	{
-		m = mark(st->board, order[pos] - '0');
+		m = mark(st->min_brd, order[pos] - '0');
 		if (!m)
 		{
 			val = st->good[order[pos] - '0'] + '0';
@@ -60,7 +60,7 @@ void	show_row(int board, int row, t_state *st, int transform)
 	while (++pos < 3)
 	{
 		m = mark(board, order[row * 3 + pos] - '0');
-		if (!m && st)
+		if (!m)
 		{
 			val = st->good[apply_symm(order[row * 3 + pos] - '0', opposite(transform))] + '0';
 			write(1, &val, 1);
@@ -77,8 +77,8 @@ void	show_game(t_set *all)
 	t_state	*state;
 
 	i = -1;
-	while (++i < all->moves && all->box[i] > -1)
-		printf("%i ", all->st[all->box[i]].board);
+	while (++i < all->moves && all->step[i].box)
+		printf("%i ", all->step[i].box->min_brd);
 	write(1, "\n", 1);
 	row = -1;
 	while (++row < 3)
@@ -86,10 +86,8 @@ void	show_game(t_set *all)
 		i = -1;
 		while (++i < all->moves)
 		{
-			state = NULL;
-			if (all->box[i] > -1)
-				state = all->st + all->box[i];
-			show_row(all->board[i], row, state, all->transform[i]);
+			state = all->step[i].box;
+			show_row(all->step[i].board, row, state, all->step[i].transform);
 			if (i < all->moves - 1)
 				write(1, " ", 1);
 		}
