@@ -46,7 +46,7 @@ void	show_state(t_state *st)
 	write(1, "\n", 1);
 }
 
-void	show_row(int board, int row, t_state *st, int transform)
+void	show_row(int board, int row, t_state *st, int op_min)
 {
 	char	order[] = "165840327";
 	char	marks[] = ".XO";
@@ -62,7 +62,7 @@ void	show_row(int board, int row, t_state *st, int transform)
 		m = mark(board, order[row * 3 + pos] - '0');
 		if (!m)
 		{
-			val = st->good[apply_symm(order[row * 3 + pos] - '0', opposite(transform))] + '0';
+			val = st->good[apply_symm(order[row * 3 + pos] - '0', opposite(op_min))] + '0';
 			write(1, &val, 1);
 		}
 		else
@@ -87,7 +87,7 @@ void	show_game(t_set *all)
 		while (++i < all->moves)
 		{
 			state = all->step[i].box;
-			show_row(all->step[i].board, row, state, all->step[i].transform);
+			show_row(all->step[i].board, row, state, all->step[i].op_min);
 			if (i < all->moves - 1)
 				write(1, " ", 1);
 		}

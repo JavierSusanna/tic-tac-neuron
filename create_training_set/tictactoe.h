@@ -18,7 +18,7 @@ typedef struct	s_state
 typedef struct	s_level
 {
 	int	board;
-	int	transform;
+	int	op_min;
 	t_state	*box;
 	int	move;
 }		t_level;
@@ -56,7 +56,7 @@ void	play(t_set *all);
 /* show.c*/
 void	show_board(int board);
 void	show_state(t_state *st);
-void	show_row(int board, int row, t_state *st, int transform);
+void	show_row(int board, int row, t_state *st, int op_min);
 void	show_game(t_set *all);
 
 /* board_init.c*/

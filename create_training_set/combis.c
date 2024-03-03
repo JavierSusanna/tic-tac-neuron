@@ -27,7 +27,7 @@ int	main(void)
 	initialize(all.st);
 	all.moves = 0;
 	all.step[0].board = 0;
-	all.step[0].transform = 0;
+	all.step[0].op_min = 0;
 	all.step[0].box = &(all.st[0]);
 	printf("auto_play\n");
 	ans = auto_play(&all);

@@ -41,7 +41,8 @@ int	do_move(int pos, t_set *all)
 
 	if (mark(all->step[all->moves].board, pos))
 	{
-		printf("ERROR: possition not empty.\n");
+		printf("ERROR: position %i not empty.\n", pos);
+		show_board(all->step[all->moves].board);
 		return (-1);
 	}
 	all->step[all->moves].move = pos;
@@ -51,8 +52,8 @@ int	do_move(int pos, t_set *all)
 	all->moves++;
 	all->step[all->moves].board = new_board;
 	show_board(new_board);
-	all->step[all->moves].transform = reduce(new_board);
-	new_board = rearrange(new_board, all->step[all->moves].transform);
+	all->step[all->moves].op_min = reduce(new_board);
+	new_board = rearrange(new_board, all->step[all->moves].op_min);
 	printf("  reduced: %d\n\n", new_board);
 	all->step[all->moves].box = find(new_board, all->st);
 	return (new_board);
@@ -100,7 +101,13 @@ int	*auto_play(t_set *all)
 	{
 		if (state->good[pos] != 4)
 			continue;
-		if (won(do_move(pos, all)))
+		if (mark(all->step[all->moves].board, apply_symm(pos, all->step[all->moves].op_min)))
+		{
+			printf("***********************pos %i \n", pos);
+			show_board(all->step[all->moves].board);
+			printf("***********************\n");
+		}
+		if (won(do_move(apply_symm(pos, opposite(all->step[all->moves].op_min)), all)))
 		{
 			state->good[pos] = 3;
 			state->paths[2] += state->multiplicity[pos];
@@ -159,7 +166,7 @@ void play(t_set *all)
 		printf("%d\n\n", magic[pos] - '0');
 		brd = do_move(magic[pos] - '0', all);
 		brd = all->step[all->moves].board;
-/*		brd = rearrange(brd, all->transform[all->moves - 1]);*/
+/*		brd = rearrange(brd, all->op_min[all->moves - 1]);*/
 	}
 	show_board(brd);
 	winner = won(brd);
