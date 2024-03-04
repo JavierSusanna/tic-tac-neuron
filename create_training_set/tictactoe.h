@@ -6,28 +6,28 @@
 # include <stdio.h>
 # include <unistd.h>
 
-typedef struct	s_state
+typedef struct	s_node
 {
 	int	min_brd;
 	int	multiplicity[9];
 	int	good[9];
 	int	paths[3];
 	int	chances[9];
-}		t_state;
+}		t_node;
 
 typedef struct	s_level
 {
 	int	board;
 	int	op_min;
-	t_state	*box;
+	t_node	*box;
 	int	move;
 }		t_level;
 
 typedef struct	s_set
 {
-	t_state	st[628];
-	int	moves;
+	t_node	nd[628];
 	t_level	step[9];
+	t_level	*now;
 }		t_set;
 
 /* board_ctrl.c*/
@@ -42,10 +42,10 @@ int	apply_symm(int pos, int  op);
 int	rearrange(int board, int  op);
 int	opposite(int sym_op);
 int	reduce(int board);
-t_state	*find(int board, t_state *st);
+t_node	*find(int board, t_node *nd);
 
 /* game.c*/
-int	rnd_move(t_state *st);
+int	rnd_move(t_node *nd);
 void	put_mark(int *board, int pos, int m);
 void	tmp_show(int *good);
 int	max(int *good);
@@ -55,14 +55,14 @@ void	play(t_set *all);
 
 /* show.c*/
 void	show_board(int board);
-void	show_state(t_state *st);
-void	show_row(int board, int row, t_state *st, int op_min);
+void	show_node(t_node *nd);
+void	show_row(int board, int row, t_node *nd, int op_min);
 void	show_game(t_set *all);
 
 /* board_init.c*/
-void	clean_symm(t_state *st);
+void	clean_symm(t_node *nd);
 int	valid_board(int board);
-void	initialize(t_state *st);
+void	initialize(t_node *nd);
 
 /* combis.c*/
 int	ft_atoi(char *str);

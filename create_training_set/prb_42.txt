@@ -1,0 +1,195 @@
+init
+board 0, op 7: pos 0 => 8
+board 0, op 7: pos 1 => 5
+board 0, op 7: pos 2 => 2
+board 0, op 7: pos 3 => 7
+board 0, op 7: pos 4 => 4
+board 0, op 7: pos 5 => 1
+board 0, op 7: pos 6 => 6
+board 0, op 7: pos 7 => 3
+board 0, op 7: pos 8 => 0
+board 0, op 6: pos 0 => 6
+board 0, op 6: pos 1 => 7
+board 0, op 6: pos 2 => 8
+board 0, op 6: pos 3 => 3
+board 0, op 6: pos 4 => 4
+board 0, op 6: pos 5 => 5
+board 0, op 6: pos 6 => 0
+board 0, op 6: pos 7 => 1
+board 0, op 6: pos 8 => 2
+board 0, op 5: pos 0 => 0
+board 0, op 5: pos 1 => 3
+board 0, op 5: pos 2 => 6
+board 0, op 5: pos 3 => 1
+board 0, op 5: pos 4 => 4
+board 0, op 5: pos 5 => 7
+board 0, op 5: pos 6 => 2
+board 0, op 5: pos 7 => 5
+board 0, op 5: pos 8 => 8
+board 0, op 4: pos 0 => 2
+board 0, op 4: pos 1 => 1
+board 0, op 4: pos 2 => 0
+board 0, op 4: pos 3 => 5
+board 0, op 4: pos 4 => 4
+board 0, op 4: pos 5 => 3
+board 0, op 4: pos 6 => 8
+board 0, op 4: pos 7 => 7
+board 0, op 4: pos 8 => 6
+board 0, op 3: pos 0 => 2
+board 0, op 3: pos 1 => 5
+board 0, op 3: pos 2 => 8
+board 0, op 3: pos 3 => 1
+board 0, op 3: pos 4 => 4
+board 0, op 3: pos 5 => 7
+board 0, op 3: pos 6 => 0
+board 0, op 3: pos 7 => 3
+board 0, op 3: pos 8 => 6
+board 0, op 2: pos 0 => 8
+board 0, op 2: pos 1 => 7
+board 0, op 2: pos 2 => 6
+board 0, op 2: pos 3 => 5
+board 0, op 2: pos 4 => 4
+board 0, op 2: pos 5 => 3
+board 0, op 2: pos 6 => 2
+board 0, op 2: pos 7 => 1
+board 0, op 2: pos 8 => 0
+board 0, op 1: pos 0 => 6
+board 0, op 1: pos 1 => 3
+board 0, op 1: pos 2 => 0
+board 0, op 1: pos 3 => 7
+board 0, op 1: pos 4 => 4
+board 0, op 1: pos 5 => 1
+board 0, op 1: pos 6 => 8
+board 0, op 1: pos 7 => 5
+board 0, op 1: pos 8 => 2
+auto_play
+   + mark: 1
+1
+...
+..X
+...
+
+  reduced: 1
+
+   + mark: 7
+7
+O..
+..X
+...
+
+  reduced: 7
+
+   + mark: 16
+16
+O..
+..X
+.X.
+
+  reduced: 16
+
+   + mark: 70
+70
+O..
+..X
+OX.
+
+  reduced: 70
+
+   + mark: 151
+151
+O..
+.XX
+OX.
+
+  reduced: 151
+
+   + mark: 637
+637
+O.O
+.XX
+OX.
+
+  reduced: 637
+
+   + mark: 1366
+1366
+OXO
+.XX
+OX.
+
+  reduced: 1366
+
+Board 1366 not found
+   + mark: 2824
+2824
+O.O
+.XX
+OXX
+
+  reduced: 2824
+
+   + mark: 4282
+4282
+OOO
+.XX
+OXX
+
+  reduced: 4282
+
+Board 4282 not found
+   + mark: 1609
+1609
+OO.
+.XX
+OX.
+
+  reduced: 889
+
+   + mark: 3796
+3796
+OO.
+.XX
+OXX
+
+  reduced: 1132
+
+   + mark: 4282
+4282
+OOO
+.XX
+OXX
+
+  reduced: 4282
+
+Board 4282 not found
+   + mark: 16918
+16918
+OO.
+OXX
+OXX
+
+  reduced: 8630
+
+Board 8630 not found
+   + mark: 1852
+1852
+OOX
+.XX
+OX.
+
+  reduced: 1852
+
+   + mark: 6226
+6226
+OOX
+.XX
+OXO
+
+  reduced: 3562
+
+   + mark: 12787
+12787
+OOX
+XXX
+OXO
+

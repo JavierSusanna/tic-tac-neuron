@@ -19,7 +19,7 @@ void	show_board(int board)
 	write(1, "\n", 1);
 }
 
-void	show_state(t_state *st)
+void	show_node(t_node *nd)
 {
 	char	order[] = "165840327";
 	char	marks[] = ".XO";
@@ -27,14 +27,14 @@ void	show_state(t_state *st)
 	char	val;
 	int		m;
 
-	printf("%d\n", st->min_brd);
+	printf("%d\n", nd->min_brd);
 	pos = -1;
 	while (++pos < 9)
 	{
-		m = mark(st->min_brd, order[pos] - '0');
+		m = mark(nd->min_brd, order[pos] - '0');
 		if (!m)
 		{
-			val = st->good[order[pos] - '0'] + '0';
+			val = nd->good[order[pos] - '0'] + '0';
 			write(1, &val, 1);
 		}
 		else
@@ -42,11 +42,11 @@ void	show_state(t_state *st)
 		if (pos % 3 == 2)
 			write(1, "\n", 1);
 	}
-	printf("%i loses, %i draws, %i wins\n", st->paths[0], st->paths[1], st->paths[2]);
+	printf("%i loses, %i draws, %i wins\n", nd->paths[0], nd->paths[1], nd->paths[2]);
 	write(1, "\n", 1);
 }
 
-void	show_row(int board, int row, t_state *st, int op_min)
+void	show_row(int board, int row, t_node *nd, int op_min)
 {
 	char	order[] = "165840327";
 	char	marks[] = ".XO";
@@ -62,7 +62,7 @@ void	show_row(int board, int row, t_state *st, int op_min)
 		m = mark(board, order[row * 3 + pos] - '0');
 		if (!m)
 		{
-			val = st->good[apply_symm(order[row * 3 + pos] - '0', opposite(op_min))] + '0';
+			val = nd->good[apply_symm(order[row * 3 + pos] - '0', opposite(op_min))] + '0';
 			write(1, &val, 1);
 		}
 		else
@@ -73,23 +73,25 @@ void	show_row(int board, int row, t_state *st, int op_min)
 void	show_game(t_set *all)
 {
 	int		row;
-	int		i;
-	t_state	*state;
+	t_level	*i;
+	t_node	*node;
 
-	i = -1;
-	while (++i < all->moves && all->step[i].box)
-		printf("%i ", all->step[i].box->min_brd);
+	i = all->now;
+	while (i->box)
+	{
+		printf("%i ", i->box->min_brd);
+		i++;
+	}
 	write(1, "\n", 1);
 	row = -1;
 	while (++row < 3)
 	{
-		i = -1;
-		while (++i < all->moves)
+		i = all->now;
+		while (i->board > 0)
 		{
-			state = all->step[i].box;
-			show_row(all->step[i].board, row, state, all->step[i].op_min);
-			if (i < all->moves - 1)
-				write(1, " ", 1);
+			node = i->box;
+			show_row(i->board, row, node, i->op_min);
+			write(1, " ", 1);
 		}
 		write(1, "\n", 1);
 	}

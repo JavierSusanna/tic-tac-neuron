@@ -1,35 +1,35 @@
 #include "tictactoe.h"
 
-void	clean_symm(t_state *st)
+void	clean_symm(t_node *nd)
 {
 	int		op;
 	int		pos;
 	int		new_pos;
 
-	/*printf("\nCleaning symmetries from board %i\n", st->board);*/
+	/*printf("\nCleaning symmetries from board %i\n", nd->board);*/
 	pos = -1;
 	while (++pos < 9)
-		st->multiplicity[pos] = 0;
+		nd->multiplicity[pos] = 0;
 	op = 8;
 	while (--op > 0)
 	{
-		if (rearrange(st->min_brd, op) == st->min_brd)
+		if (rearrange(nd->min_brd, op) == nd->min_brd)
 		{
 	/*		printf("-op %i\n", op);*/
 			pos = -1;
 			while (++pos < 9)
 			{
 				new_pos = apply_symm(pos, op);
-				if (!st->min_brd)
+				if (!nd->min_brd)
 					printf("board 0, op %i: pos %i => %i\n", op, pos, new_pos);
 				if (new_pos == pos)
-					st->multiplicity[pos] = 1;
+					nd->multiplicity[pos] = 1;
 				else if (1 == op || 3 == op)
-					st->multiplicity[pos] = 4;
+					nd->multiplicity[pos] = 4;
 				else
-					st->multiplicity[pos] = 2;
+					nd->multiplicity[pos] = 2;
 				if (new_pos > pos)
-					st->good[new_pos] = 0;
+					nd->good[new_pos] = 0;
 			}
 		}
 	}
@@ -42,7 +42,7 @@ int	valid_board(int board)
 	return (0);
 }
 
-void	initialize(t_state *st)
+void	initialize(t_node *nd)
 {
 	int	pos;
 	int	id;
@@ -52,20 +52,20 @@ void	initialize(t_state *st)
 	{
 		if (valid_board(id) <= 0)
 			continue ;
-		st->min_brd = id;
+		nd->min_brd = id;
 		pos = -1;
 		while (++pos < 9)
 		{
 			if (mark(id, pos))
-				st->good[pos] = 0;
+				nd->good[pos] = 0;
 			else
-				st->good[pos] = 4;
+				nd->good[pos] = 4;
 		}
-		clean_symm(st);
-		st->paths[0] = 0;
-		st->paths[1] = 0;
-		st->paths[2] = 0;
-		st++;
+		clean_symm(nd);
+		nd->paths[0] = 0;
+		nd->paths[1] = 0;
+		nd->paths[2] = 0;
+		nd++;
 	}
-	st->min_brd = -1;	
+	nd->min_brd = -1;	
 }

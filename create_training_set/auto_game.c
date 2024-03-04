@@ -1,15 +1,15 @@
 #include "tictactoe.h"
 
-int	rnd_move(t_state *st)
+int	rnd_move(t_node *nd)
 {
 	int		sum;
 	int		pos;
 
 	sum = 0;
 	pos = -1;
-	/*show_state(st);*/
+	/*show_node(nd);*/
 	while (++pos < 9)
-		sum += st->good[pos];
+		sum += nd->good[pos];
 	/*printf("\nsum: %i\n", sum);*/
 	sum *= rand() & 255;
 	/*printf("sum*rnd&255: %i\n", sum);*/
@@ -18,7 +18,7 @@ int	rnd_move(t_state *st)
 	pos = -1;
 	while (sum > 0)
 	{
-		sum -= st->good[++pos];
+		sum -= nd->good[++pos];
 	/*	printf("after pos: %i, sum: %i\n", pos - 1, sum);*/
 	}
 	/*printf("pos: %i\n", pos);*/
@@ -38,24 +38,32 @@ void	put_mark(int *board, int pos, int m)
 int	do_move(int pos, t_set *all)
 {
 	int	new_board;
+	int	mk;
 
-	if (mark(all->step[all->moves].board, pos))
+	if (mark(all->now->board, pos))
 	{
 		printf("ERROR: position %i not empty.\n", pos);
-		show_board(all->step[all->moves].board);
+		show_board(all->now->board);
 		return (-1);
 	}
-	all->step[all->moves].move = pos;
-	new_board = all->step[all->moves].board;
-	put_mark(&new_board, pos, (all->moves % 2) + 1);
+	all->now->move = pos;
+	new_board = all->now->board;
+	mk = gaps(new_board);
+	if (mk > 0)
+	{
+		mk = (1 + mk) % 2 + 1;
+		put_mark(&new_board, pos, mk);
+	}
+	else
+		return (-1);
 	printf("   + mark: %d\n", new_board);
-	all->moves++;
-	all->step[all->moves].board = new_board;
+	all->now++;
+	all->now->board = new_board;
 	show_board(new_board);
-	all->step[all->moves].op_min = reduce(new_board);
-	new_board = rearrange(new_board, all->step[all->moves].op_min);
+	all->now->op_min = reduce(new_board);
+	new_board = rearrange(new_board, all->now->op_min);
 	printf("  reduced: %d\n\n", new_board);
-	all->step[all->moves].box = find(new_board, all->st);
+	all->now->box = find(new_board, all->nd);
 	return (new_board);
 }
 
@@ -89,55 +97,57 @@ int	*auto_play(t_set *all)
 {
 	int	pos;
 	int	mx;
-	t_state	*state;
+	t_level	*pin;
 	int	*ans;
 
-	printf("moves: %i\n", all->moves);
-	state = all->step[all->moves].box;
-	if (state->paths[0] || state->paths[1] || state->paths[2])
-		return (state->paths);
+	pin = all->now;
+	if (pin->box->paths[0] || pin->box->paths[1] || pin->box->paths[2])
+		return (pin->box->paths);
 	pos = -1;
 	while (++pos < 9)
 	{
-		if (state->good[pos] != 4)
+		if (pin->box->good[pos] != 4)
 			continue;
-		if (mark(all->step[all->moves].board, apply_symm(pos, all->step[all->moves].op_min)))
+		if (mark(pin->board, apply_symm(pos, pin->op_min)))
 		{
 			printf("***********************pos %i \n", pos);
-			show_board(all->step[all->moves].board);
+			show_board(pin->board);
 			printf("***********************\n");
 		}
-		if (won(do_move(apply_symm(pos, opposite(all->step[all->moves].op_min)), all)))
+		if (won(do_move(apply_symm(pos, opposite(pin->op_min)), all)))
 		{
-			state->good[pos] = 3;
-			state->paths[2] += state->multiplicity[pos];
+			pin->box->good[pos] = 3;
+			pin->box->paths[2] += pin->box->multiplicity[pos];
 		}
-		else if (all->step[all->moves].box)
+		else if (all->now->box)
 		{
 			ans = auto_play(all);
-			state->good[pos] = 4 - max(all->step[all->moves].box->good);
-			state->paths[0] += ans[2] * state->multiplicity[pos];
-			state->paths[1] += ans[1] * state->multiplicity[pos];
-			state->paths[2] += ans[0] * state->multiplicity[pos];
+			pin->box->good[pos] = 4 - max(all->now->box->good);
+			pin->box->paths[0] += ans[2] * pin->box->multiplicity[pos];
+			pin->box->paths[1] += ans[1] * pin->box->multiplicity[pos];
+			pin->box->paths[2] += ans[0] * pin->box->multiplicity[pos];
 		}
 		else
 		{
-			state->good[pos] = 2;
-			state->paths[1] += state->multiplicity[pos];
+			pin->box->good[pos] = 2;
+			pin->box->paths[1] += pin->box->multiplicity[pos];
 		}
-		all->moves--;
+		if (all->now == all->step)
+			printf("can't go back.\n");
+		else
+			all->now--;
 	}
-	mx = max(state->good);
+	mx = max(pin->box->good);
 	pos = -1;
 	while (++pos < 9)
 	{
-		if (state->good[pos] == mx)
-			state->chances[pos] = 1;/****** FIRST, SIMPLEST APPROACH ****/
+		if (pin->box->good[pos] == mx)
+			pin->box->chances[pos] = 1;/****** FIRST, SIMPLEST APPROACH ****/
 		else
-			state->chances[pos] = 0;
+			pin->box->chances[pos] = 0;
 	}
 
-	return (state->paths);
+	return (pin->box->paths);
 }
 
 void play(t_set *all)
@@ -154,7 +164,7 @@ void play(t_set *all)
 		pos = -1;
 		while (pos < 0)
 		{
-			printf("\nPlayer %d, select position: ", all->moves % 2 + 1);
+			printf("\nPlayer %d, select position: ", (1 + gaps(brd)) % 2 + 1);
 			scanf("%d", &pos);
 			printf(" pos %d ", pos);
 			if (pos < 0 || pos > 8 || mark(brd, magic[pos] - '0'))
@@ -165,7 +175,9 @@ void play(t_set *all)
 		}
 		printf("%d\n\n", magic[pos] - '0');
 		brd = do_move(magic[pos] - '0', all);
-		brd = all->step[all->moves].board;
+		if (brd < 0)
+			return ;
+		brd = all->now->board;
 /*		brd = rearrange(brd, all->op_min[all->moves - 1]);*/
 	}
 	show_board(brd);
@@ -174,5 +186,5 @@ void play(t_set *all)
 		printf("Player %d won!\n", winner); /*((all->moves - 1) % 2) + 1);*/
 	else
 		printf("The game ended in a draw\n");
-	show_board(all->step[all->moves].board);
+	show_board(all->now->board);
 }

@@ -72,11 +72,11 @@ int	reduce(int board)
 	return (min_op);
 }
 
-t_state	*find(int board, t_state *st)
+t_node	*find(int board, t_node *nd)
 {
-	t_state	*ret;
+	t_node	*ret;
 
-	ret = st;
+	ret = nd;
 	while (ret->min_brd != board && ret->min_brd != -1)
 		ret++;
 	if (ret->min_brd == board)
