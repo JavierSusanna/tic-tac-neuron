@@ -44,6 +44,11 @@ int	do_move(int pos, t_set *all)
 	{
 		printf("ERROR: position %i not empty.\n", pos);
 		show_board(all->now->board);
+		printf("op_min: %d\n", all->now->op_min);
+		printf("opposite op_min: %d\n", opposite(all->now->op_min));
+		printf("apply opposite op_min to 3: %d\n", apply_symm(3, opposite(all->now->op_min)));
+		printf("min_board: %d\n", all->now->box->min_brd);
+		exit(1);
 		return (-1);
 	}
 	all->now->move = pos;
@@ -56,7 +61,7 @@ int	do_move(int pos, t_set *all)
 	}
 	else
 		return (-1);
-	printf("   + mark: %d\n", new_board);
+	printf("   + mark %d at %d: %d\n", mk, pos, new_board);
 	all->now++;
 	all->now->board = new_board;
 	show_board(new_board);
@@ -114,8 +119,9 @@ int	*auto_play(t_set *all)
 			show_board(pin->board);
 			printf("***********************\n");
 		}
-		if (won(do_move(apply_symm(pos, opposite(pin->op_min)), all)))
+		if (won(do_move(apply_symm(pos, pin->op_min), all))) /*opposite(pin->op_min)*/
 		{
+			printf("won\n");
 			pin->box->good[pos] = 3;
 			pin->box->paths[2] += pin->box->multiplicity[pos];
 		}
@@ -146,7 +152,7 @@ int	*auto_play(t_set *all)
 		else
 			pin->box->chances[pos] = 0;
 	}
-
+	printf("returning\n");
 	return (pin->box->paths);
 }
 

@@ -26,7 +26,7 @@ typedef struct	s_level
 typedef struct	s_set
 {
 	t_node	nd[628];
-	t_level	step[9];
+	t_level	step[10];
 	t_level	*now;
 }		t_set;
 
