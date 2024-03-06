@@ -37,7 +37,7 @@ int	main(void)
 	while (++n < 627)
 		show_node(all.nd + n);
 	printf("play1\n");
-/*	play(&all);*/
+	play(&all);
 	return (0);
 }
 /*

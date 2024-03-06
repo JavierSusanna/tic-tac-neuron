@@ -9,7 +9,7 @@ void	clean_symm(t_node *nd)
 	/*printf("\nCleaning symmetries from board %i\n", nd->board);*/
 	pos = -1;
 	while (++pos < 9)
-		nd->multiplicity[pos] = 0;
+		nd->multiplicity[pos] = 1;
 	op = 8;
 	while (--op > 0)
 	{

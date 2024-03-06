@@ -9,7 +9,7 @@ int	rnd_move(t_node *nd)
 	pos = -1;
 	/*show_node(nd);*/
 	while (++pos < 9)
-		sum += nd->good[pos];
+		sum += nd->chances[pos];
 	/*printf("\nsum: %i\n", sum);*/
 	sum *= rand() & 255;
 	/*printf("sum*rnd&255: %i\n", sum);*/
@@ -18,7 +18,7 @@ int	rnd_move(t_node *nd)
 	pos = -1;
 	while (sum > 0)
 	{
-		sum -= nd->good[++pos];
+		sum -= nd->chances[++pos];
 	/*	printf("after pos: %i, sum: %i\n", pos - 1, sum);*/
 	}
 	/*printf("pos: %i\n", pos);*/
@@ -119,6 +119,7 @@ int	*auto_play(t_set *all)
 			show_board(pin->board);
 			printf("***********************\n");
 		}
+		printf("multiplicity pos %d: %d\n", pos, pin->box->multiplicity[pos]);
 		if (won(do_move(apply_symm(pos, pin->op_min), all))) /*opposite(pin->op_min)*/
 		{
 			printf("won\n");
@@ -132,12 +133,14 @@ int	*auto_play(t_set *all)
 			pin->box->paths[0] += ans[2] * pin->box->multiplicity[pos];
 			pin->box->paths[1] += ans[1] * pin->box->multiplicity[pos];
 			pin->box->paths[2] += ans[0] * pin->box->multiplicity[pos];
+			printf("receiving ans (2, 1, 0): %d, %d, %d\n", ans[2], ans[1], ans[0]);
 		}
 		else
 		{
 			pin->box->good[pos] = 2;
 			pin->box->paths[1] += pin->box->multiplicity[pos];
 		}
+		printf("paths (0, 1, 2): %d, %d, %d\n", pin->box->paths[0], pin->box->paths[1], pin->box->paths[2]);
 		if (all->now == all->step)
 			printf("can't go back.\n");
 		else
@@ -162,15 +165,40 @@ void play(t_set *all)
 	int	pos;
 	int	brd;
 	int	winner;
+	int	n_players;
+	int	machine;
+	int	turn;
 
+	n_players = -1;
+	while (n_players < 0 || n_players > 2)
+	{
+		printf("\nNumber of human players? (0, 1 or 2) ");
+		scanf("%d", &n_players);
+		if (n_players < 0 || n_players > 2)
+			printf("\nERROR\n");
+	}
+	if (1 == n_players)
+		machine = 0;
+	else
+		machine = 1;
+	while (machine < 1 || machine > 2)
+	{
+		printf("\nWho plays first? (1 me, 2 you) ");
+		scanf("%d", &machine);
+		if (machine < 1 || machine > 2)
+			printf("\nERROR\n");
+	}
 	brd = 0;
-	while (valid_board(brd))
+	while (!won(brd) && gaps(brd))
 	{
 		show_board(brd);
+		turn = (1 + gaps(brd)) % 2 + 1;
 		pos = -1;
+		if (1 == n_players && machine == turn)
+			pos = apply_symm(rnd_move(all->now->box), all->now->op_min);
 		while (pos < 0)
 		{
-			printf("\nPlayer %d, select position: ", (1 + gaps(brd)) % 2 + 1);
+			printf("\nPlayer %d, select position: ", turn);
 			scanf("%d", &pos);
 			printf(" pos %d ", pos);
 			if (pos < 0 || pos > 8 || mark(brd, magic[pos] - '0'))
@@ -179,8 +207,10 @@ void play(t_set *all)
 				printf("\nWrong position");
 			}
 		}
-		printf("%d\n\n", magic[pos] - '0');
-		brd = do_move(magic[pos] - '0', all);
+		if (2 == n_players || machine != turn)
+			pos = magic[pos] - '0';
+		printf("%d\n\n", pos);
+		brd = do_move(pos, all);
 		if (brd < 0)
 			return ;
 		brd = all->now->board;
