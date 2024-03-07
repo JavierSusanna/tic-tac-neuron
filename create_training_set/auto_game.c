@@ -61,14 +61,12 @@ int	do_move(int pos, t_set *all)
 	}
 	else
 		return (-1);
-	printf("   + mark %d at %d: %d\n", mk, pos, new_board);
 	all->now++;
 	all->now->board = new_board;
-	show_board(new_board);
 	all->now->op_min = reduce(new_board);
 	new_board = rearrange(new_board, all->now->op_min);
-	printf("  reduced: %d\n\n", new_board);
 	all->now->box = find(new_board, all->nd);
+	all->now->move = -1;
 	return (new_board);
 }
 
@@ -119,10 +117,8 @@ int	*auto_play(t_set *all)
 			show_board(pin->board);
 			printf("***********************\n");
 		}
-		printf("multiplicity pos %d: %d\n", pos, pin->box->multiplicity[pos]);
 		if (won(do_move(apply_symm(pos, pin->op_min), all))) /*opposite(pin->op_min)*/
 		{
-			printf("won\n");
 			pin->box->good[pos] = 3;
 			pin->box->paths[2] += pin->box->multiplicity[pos];
 		}
@@ -133,14 +129,12 @@ int	*auto_play(t_set *all)
 			pin->box->paths[0] += ans[2] * pin->box->multiplicity[pos];
 			pin->box->paths[1] += ans[1] * pin->box->multiplicity[pos];
 			pin->box->paths[2] += ans[0] * pin->box->multiplicity[pos];
-			printf("receiving ans (2, 1, 0): %d, %d, %d\n", ans[2], ans[1], ans[0]);
 		}
 		else
 		{
 			pin->box->good[pos] = 2;
 			pin->box->paths[1] += pin->box->multiplicity[pos];
 		}
-		printf("paths (0, 1, 2): %d, %d, %d\n", pin->box->paths[0], pin->box->paths[1], pin->box->paths[2]);
 		if (all->now == all->step)
 			printf("can't go back.\n");
 		else
@@ -155,7 +149,6 @@ int	*auto_play(t_set *all)
 		else
 			pin->box->chances[pos] = 0;
 	}
-	printf("returning\n");
 	return (pin->box->paths);
 }
 
@@ -169,58 +162,67 @@ void play(t_set *all)
 	int	machine;
 	int	turn;
 
-	n_players = -1;
-	while (n_players < 0 || n_players > 2)
+	while (1)
 	{
-		printf("\nNumber of human players? (0, 1 or 2) ");
-		scanf("%d", &n_players);
-		if (n_players < 0 || n_players > 2)
-			printf("\nERROR\n");
-	}
-	if (1 == n_players)
-		machine = 0;
-	else
-		machine = 1;
-	while (machine < 1 || machine > 2)
-	{
-		printf("\nWho plays first? (1 me, 2 you) ");
-		scanf("%d", &machine);
-		if (machine < 1 || machine > 2)
-			printf("\nERROR\n");
-	}
-	brd = 0;
-	while (!won(brd) && gaps(brd))
-	{
-		show_board(brd);
-		turn = (1 + gaps(brd)) % 2 + 1;
-		pos = -1;
-		if (1 == n_players && machine == turn)
-			pos = apply_symm(rnd_move(all->now->box), all->now->op_min);
-		while (pos < 0)
+		n_players = -1;
+		while (n_players < 0 || n_players > 2)
 		{
-			printf("\nPlayer %d, select position: ", turn);
-			scanf("%d", &pos);
-			printf(" pos %d ", pos);
-			if (pos < 0 || pos > 8 || mark(brd, magic[pos] - '0'))
-			{
-				pos = -1;
-				printf("\nWrong position");
-			}
+			printf("\nNumber of human players? (0, 1 or 2) ");
+			scanf("%d", &n_players);
+			if (n_players < 0 || n_players > 2)
+				printf("\nERROR\n");
 		}
-		if (2 == n_players || machine != turn)
-			pos = magic[pos] - '0';
-		printf("%d\n\n", pos);
-		brd = do_move(pos, all);
-		if (brd < 0)
-			return ;
-		brd = all->now->board;
-/*		brd = rearrange(brd, all->op_min[all->moves - 1]);*/
-	}
-	show_board(brd);
-	winner = won(brd);
-	if (winner > 0)
-		printf("Player %d won!\n", winner); /*((all->moves - 1) % 2) + 1);*/
-	else
-		printf("The game ended in a draw\n");
-	show_board(all->now->board);
+		if (1 == n_players)
+			machine = 0;
+		else
+			machine = 1;
+		while (machine < 1 || machine > 2)
+		{
+			printf("\nWho plays first? (1 beast, 2 poor human) ");
+			scanf("%d", &machine);
+			if (machine < 1 || machine > 2)
+				printf("\nERROR\n");
+		}
+		brd = 0;
+		while (!won(brd) && gaps(brd))
+		{
+			if (n_players)
+				show_board(brd);
+			turn = (1 + gaps(brd)) % 2 + 1;
+			pos = -1;
+			if ((1 == n_players && machine == turn) || !n_players)
+				pos = apply_symm(rnd_move(all->now->box), all->now->op_min);
+			while (pos < 0)
+			{
+				printf("\nPlayer %d, select position: ", turn);
+				scanf("%d", &pos);
+				if (pos < 0 || pos > 8 || mark(brd, magic[pos] - '0'))
+				{
+					pos = -1;
+					printf("\nWrong position");
+				}
+			}
+			if (2 == n_players || (machine != turn && 1 == n_players))
+				pos = magic[pos] - '0';
+			if (n_players)
+				printf("%d\n\n", pos);
+			brd = do_move(pos, all);
+			if (brd < 0)
+				return ;
+			brd = all->now->board;
+	/*		brd = rearrange(brd, all->op_min[all->moves - 1]);*/
+		}
+		show_game(all);
+		winner = won(brd);
+		if (winner > 0)
+			printf("Player %d won!\n", winner); /*((all->moves - 1) % 2) + 1);*/
+		else
+			printf("The game ended in a draw\n");
+		printf("\n\n**************************\nPlay again? (1 yes) ");
+		scanf("%d", &pos);
+		if (pos != 1)
+			break;
+		else
+			all->now = all->step;
+	}	
 }

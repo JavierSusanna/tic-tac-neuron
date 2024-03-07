@@ -1,0 +1,21 @@
+with 0 holes: 0
+with 1 holes: 34
+with 2 holes: 95
+with 3 holes: 183
+with 4 holes: 153
+with 5 holes: 108
+with 6 holes: 38
+with 7 holes: 12
+with 8 holes: 3
+with 9 holes: 1
+won 0: 20
+won 1: 55
+won 2: 79
+won 3: 45
+won 4: 21
+won 5: 0
+won 6: 0
+won 7: 0
+won 8: 0
+won 9: 0
+draws: 3

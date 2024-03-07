@@ -60,7 +60,7 @@ void	show_row(int board, int row, t_node *nd, int op_min)
 	while (++pos < 3)
 	{
 		m = mark(board, order[row * 3 + pos] - '0');
-		if (!m)
+		if (!m && nd)
 		{
 			val = nd->good[apply_symm(order[row * 3 + pos] - '0', opposite(op_min))] + '0';
 			write(1, &val, 1);
@@ -74,24 +74,26 @@ void	show_game(t_set *all)
 {
 	int		row;
 	t_level	*i;
-	t_node	*node;
 
-	i = all->now;
-	while (i->box)
+	write(1, " ", 1);
+	i = all->step;
+	while (i->move > -1)
 	{
-		printf("%i ", i->box->min_brd);
+		printf("%5i ", i->box->min_brd);
 		i++;
 	}
-	write(1, "\n", 1);
+		printf("%5i \n", i->board);
 	row = -1;
 	while (++row < 3)
 	{
-		i = all->now;
-		while (i->board > 0)
+		i = all->step;
+		while (1)
 		{
-			node = i->box;
-			show_row(i->board, row, node, i->op_min);
-			write(1, " ", 1);
+			write(1, "   ", 3);
+			show_row(i->board, row, i->box, i->op_min);
+			if (i->move < 0)
+				break;
+			i++;
 		}
 		write(1, "\n", 1);
 	}

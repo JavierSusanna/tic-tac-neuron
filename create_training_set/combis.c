@@ -24,7 +24,7 @@ int	main(void)
 	setvbuf(stdout, NULL, _IONBF, 0);
 	srand(time(NULL));
 	printf("init\n");
-	initialize(all.nd);
+	initialize(&all);
 	all.now = &(all.step[0]);
 	all.now->board = 0;
 	all.now->op_min = 0;

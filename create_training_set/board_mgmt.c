@@ -81,6 +81,5 @@ t_node	*find(int board, t_node *nd)
 		ret++;
 	if (ret->min_brd == board)
 		return (ret);
-	printf("Board %i not found\n", board);
 	return (NULL);
 }

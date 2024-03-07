@@ -25,6 +25,9 @@ typedef struct	s_level
 
 typedef struct	s_set
 {
+	int		ct_holes[10];
+	int		won[10];
+	int		draw;
 	t_node	nd[628];
 	t_level	step[10];
 	t_level	*now;
@@ -62,7 +65,7 @@ void	show_game(t_set *all);
 /* board_init.c*/
 void	clean_symm(t_node *nd);
 int	valid_board(int board);
-void	initialize(t_node *nd);
+void	initialize(t_set *all);
 
 /* combis.c*/
 int	ft_atoi(char *str);
