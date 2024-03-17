@@ -21,7 +21,13 @@ void	show_board(int board)
 
 void	show_results(t_node *nd)
 {
-	printf("board, good: \n");
+	int	i;
+
+	printf("%i ", nd->min_brd);
+	i = -1;
+	while (++i < 9)
+		printf("%i", nd->chances[i]);
+	printf("\n");
 }
 
 void	show_node(t_node *nd)

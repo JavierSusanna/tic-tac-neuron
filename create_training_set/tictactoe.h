@@ -58,6 +58,7 @@ void	play(t_set *all);
 
 /* show.c*/
 void	show_board(int board);
+void	show_results(t_node *nd);
 void	show_node(t_node *nd);
 void	show_row(int board, int row, t_node *nd, int op_min);
 void	show_game(t_set *all);
