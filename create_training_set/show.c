@@ -19,6 +19,11 @@ void	show_board(int board)
 	write(1, "\n", 1);
 }
 
+void	show_results(t_node *nd)
+{
+	printf("board, good: \n");
+}
+
 void	show_node(t_node *nd)
 {
 	char	order[] = "165840327";
