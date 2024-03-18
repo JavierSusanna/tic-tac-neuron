@@ -42,8 +42,15 @@ int	won(int board)
 		{
 			if (mark(board, pos2) == m && mark(board, pos3) == m)
 			{
-				who = m;
-				ct_lines++;
+				if (!who)
+				{
+					who = m;
+					ct_lines++;
+				}
+				else if (who == m)
+					return (who);
+				else
+					return (-1);
 			}
 		}
 	}

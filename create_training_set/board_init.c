@@ -45,21 +45,25 @@ void	initialize(t_set *all)
 	int	pos;
 	int	id;
 	t_node	*nd;
+	int	ct;
 
 	id = -1;
 	while (++id < 10)
 		all->ct_holes[id] = 0;
 	nd = all->nd;
+	ct = 0;
 	id = -1;
 	while (++id < 27 * 27 * 27)
 	{
+		if (!won(id) && gaps(id) > 0)
+			ct++;
 		if (valid_board(id) <= 0)
 		{
 			if (!reduce(id) && gaps(id) >= 0)
 			{
-				if (won(id))
+				if (won(id) > 0)
 					all->won[gaps(id)]++;
-				else
+				else if (!won(id))
 					all->draw++;
 			}
 			continue ;
@@ -81,11 +85,12 @@ void	initialize(t_set *all)
 		nd++;
 	}
 	nd->min_brd = -1;
+/*	printf("Valid boards: %i\n", ct);*/
 	id = -1;
-/*	while (++id < 10)
+	while (++id < 10)
 	{
 		printf("with %i holes: %i\n", id, all->ct_holes[id]);
 		printf("won %i: %i\n", id, all->won[id]);
 	}
-	printf("draws: %i\n", all->draw);*/
+	printf("draws: %i\n", all->draw);
 }

@@ -31,7 +31,7 @@ void	show_results(t_node *nd)
 	while (op < 8)
 		done[op++] = -1;
 	op = -1;
-	while (++op < 8)
+	while (++op < 1)
 	{
 		brd = rearrange(nd->min_brd, op);
 		j = -1;

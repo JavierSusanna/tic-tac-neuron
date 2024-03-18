@@ -32,10 +32,10 @@ int	main(void)
 	ans = auto_play(&all);
 /*	printf("Wins: %i\nDraws: %i\nLosses: %i\n", ans[2], ans[1], ans[0]);*/
 	n = -1;
-/*	printf("####################\n");*/
+/*	printf("####################\n");
 	while (++n < 627)
 		show_results(all.nd + n);
-/*	printf("play1\n");
+	printf("play1\n");
 	play(&all);*/
 	return (0);
 }
