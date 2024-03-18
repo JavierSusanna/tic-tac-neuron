@@ -23,21 +23,20 @@ int	main(void)
 
 	setvbuf(stdout, NULL, _IONBF, 0);
 	srand(time(NULL));
-	printf("init\n");
 	initialize(&all);
 	all.now = &(all.step[0]);
 	all.now->board = 0;
 	all.now->op_min = 0;
 	all.now->box = &(all.nd[0]);
-	printf("auto_play\n");
+/*	printf("auto_play\n");*/
 	ans = auto_play(&all);
-	printf("Wins: %i\nDraws: %i\nLosses: %i\n", ans[2], ans[1], ans[0]);
+/*	printf("Wins: %i\nDraws: %i\nLosses: %i\n", ans[2], ans[1], ans[0]);*/
 	n = -1;
-	printf("####################\n");
+/*	printf("####################\n");*/
 	while (++n < 627)
 		show_results(all.nd + n);
-	printf("play1\n");
-	play(&all);
+/*	printf("play1\n");
+	play(&all);*/
 	return (0);
 }
 /*

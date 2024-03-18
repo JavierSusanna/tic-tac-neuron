@@ -20,8 +20,6 @@ void	clean_symm(t_node *nd)
 			while (++pos < 9)
 			{
 				new_pos = apply_symm(pos, op);
-				if (!nd->min_brd)
-					printf("board 0, op %i: pos %i => %i\n", op, pos, new_pos);
 				if (new_pos == pos)
 					nd->multiplicity[pos] = 1;
 				else if (1 == op || 3 == op)
@@ -84,10 +82,10 @@ void	initialize(t_set *all)
 	}
 	nd->min_brd = -1;
 	id = -1;
-	while (++id < 10)
+/*	while (++id < 10)
 	{
 		printf("with %i holes: %i\n", id, all->ct_holes[id]);
 		printf("won %i: %i\n", id, all->won[id]);
 	}
-	printf("draws: %i\n", all->draw);
+	printf("draws: %i\n", all->draw);*/
 }

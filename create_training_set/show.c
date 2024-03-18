@@ -22,12 +22,34 @@ void	show_board(int board)
 void	show_results(t_node *nd)
 {
 	int	i;
+	int	j;
+	int	op;
+	int	done[8];
+	int	brd;
 
-	printf("%i ", nd->min_brd);
-	i = -1;
-	while (++i < 9)
-		printf("%i", nd->chances[i]);
-	printf("\n");
+	op = 0;
+	while (op < 8)
+		done[op++] = -1;
+	op = -1;
+	while (++op < 8)
+	{
+		brd = rearrange(nd->min_brd, op);
+		j = -1;
+		while (++j < 8)
+		{
+			if (done[j] == brd || -1 == done[j])
+				break ;
+		}
+		if (-1 == done[j])
+		{
+			done[j] = brd;
+			printf("%i ", brd);
+			i = -1;
+			while (++i < 9)
+				printf("%i", nd->chances[apply_symm(i, op)]);
+			printf("\n");
+		}
+	}
 }
 
 void	show_node(t_node *nd)
