@@ -35,8 +35,8 @@ int	main(void)
 /*	printf("####################\n");
 	while (++n < 627)
 		show_results(all.nd + n);
-	printf("play1\n");
-	play(&all);*/
+	printf("play1\n");*/
+	play(&all);
 	return (0);
 }
 /*
