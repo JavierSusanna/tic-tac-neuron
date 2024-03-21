@@ -35,4 +35,4 @@ It is the possible to **play the game**, either 0, 1 or two human players.
 
 ### Pending
 ---
-The **neural network** is still not implemented.
+The **neural network** is still not implemented...
