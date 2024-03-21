@@ -1,4 +1,4 @@
-#include "tictactoe.h"
+#include "tic-tac-toe.h"
 
 void	show_board(int board)
 {
@@ -31,7 +31,7 @@ void	show_results(t_node *nd)
 	while (op < 8)
 		done[op++] = -1;
 	op = -1;
-	while (++op < 1)
+	while (++op < OUTPUT_BASIC_SET)
 	{
 		brd = rearrange(nd->min_brd, op);
 		j = -1;

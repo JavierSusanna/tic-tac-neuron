@@ -1,4 +1,4 @@
-#include "tictactoe.h"
+#include "tic-tac-toe.h"
 
 void	clean_symm(t_node *nd)
 {
@@ -85,12 +85,12 @@ void	initialize(t_set *all)
 		nd++;
 	}
 	nd->min_brd = -1;
-/*	printf("Valid boards: %i\n", ct);*/
+/*	printf("Valid boards: %i\n", ct);
 	id = -1;
 	while (++id < 10)
 	{
 		printf("with %i holes: %i\n", id, all->ct_holes[id]);
 		printf("won %i: %i\n", id, all->won[id]);
 	}
-	printf("draws: %i\n", all->draw);
+	printf("draws: %i\n", all->draw);*/
 }

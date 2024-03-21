@@ -1,4 +1,4 @@
-#include "tictactoe.h"
+#include "tic-tac-toe.h"
 
 int	rnd_move(t_node *nd)
 {
@@ -68,17 +68,6 @@ int	do_move(int pos, t_set *all)
 	all->now->box = find(new_board, all->nd);
 	all->now->move = -1;
 	return (new_board);
-}
-
-void	tmp_show(int *good)
-{
-	int	i;
-
-	write(1, "8654!\n", 6);
-	i = -1;
-	while (++i < 9)
-		printf("%i ", good[i]);
-	printf("\n");
 }
 
 int	max(int *good)
@@ -204,8 +193,6 @@ void play(t_set *all)
 			}
 			if (2 == n_players || (machine != turn && 1 == n_players))
 				pos = magic[pos] - '0';
-			if (n_players)
-				printf("%d\n\n", pos);
 			brd = do_move(pos, all);
 			if (brd < 0)
 				return ;

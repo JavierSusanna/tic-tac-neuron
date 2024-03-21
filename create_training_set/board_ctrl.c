@@ -1,4 +1,4 @@
-#include "tictactoe.h"
+#include "tic-tac-toe.h"
 
 int	mark(int board, int pos)
 {

@@ -1,4 +1,4 @@
-#include "tictactoe.h"
+#include "tic-tac-toe.h"
 
 int	ft_atoi(char *str)
 {
@@ -30,13 +30,13 @@ int	main(void)
 	all.now->box = &(all.nd[0]);
 /*	printf("auto_play\n");*/
 	ans = auto_play(&all);
-/*	printf("Wins: %i\nDraws: %i\nLosses: %i\n", ans[2], ans[1], ans[0]);*/
+/*	printf("Wins: %i\nDraws: %i\nLosses: %i\n", ans[2], ans[1], ans[0]);
+	printf("####################\n");*/
 	n = -1;
-/*	printf("####################\n");
 	while (++n < 627)
 		show_results(all.nd + n);
-	printf("play1\n");
-	play(&all);*/
+	printf("\n");
+	play(&all);
 	return (0);
 }
 /*

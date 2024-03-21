@@ -6,6 +6,9 @@
 # include <stdio.h>
 # include <unistd.h>
 
+# define OUTPUT_BASIC_SET 1
+# define OUTPUT_EXTENDED_SET 8
+
 typedef struct	s_node
 {
 	int	min_brd;

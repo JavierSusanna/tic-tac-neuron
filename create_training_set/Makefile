@@ -22,7 +22,7 @@ all: $(NAME)
 $(NAME): $(FILES_OBJ)
 	$(GC) $(FILES_OBJ) -o $(NAME) $(CFLAGS) #-fsanitize=address
 #	@ar rsc $(NAME) $(FILES_OBJ)
-	@echo "SUCCESSFULLY COMPILED $(NAME)"
+	@echo "SUCCESSFULLY COMPILED \033[0;31m$(NAME)\033[0m."
 
 $(DIR_OBJ)%.o: $(DIR_TTN)%.c | DIRECTORIES #LIB
 	@$(GC) $(CFLAGS) -I $(INCLUDES) -c $< -o $@
