@@ -35,11 +35,7 @@ int	main(void)
 	n = -1;
 	while (++n < 627)
 		show_results(all.nd + n);
-<<<<<<< HEAD
 	printf("\n");
-=======
-	printf("play1\n");*/
->>>>>>> fcdbbe746397b90440457d1bfa38af99c2bab625
 	play(&all);
 	return (0);
 }
