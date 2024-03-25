@@ -17,7 +17,7 @@ FILES_OBJ = $(addprefix $(DIR_OBJ), $(addsuffix .o, $(FILES_TTN)))
 ### PROGRAM RULES ###
 #####################
 
-all: #$(NAME)
+all: $(NAME)
 	@echo "\nNeural network not implemented."
 	@echo "Change directory \033[0;32mcd ../create_training_set\033[0m to see most interesting stuff.\n"
 

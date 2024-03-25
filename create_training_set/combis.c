@@ -35,7 +35,8 @@ int	main(void)
 	n = -1;
 	while (++n < 627)
 		show_results(all.nd + n);
-	printf("\n");
+	printf("\nTraining set created\n");
+	printf("\nYou can now play tic-tac-toe\n");
 	play(&all);
 	return (0);
 }
