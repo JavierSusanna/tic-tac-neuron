@@ -1,3 +1,4 @@
+# A TIC-TAC-TOE WITH AI
 ### Project overview
 ---
 The proyect aims to teach a **neural network** how to play **tic-tac-toe**. The modality of game considered is the one that can be played with **paper and pencil**: the game ends after a maximum of nine steps. (The other game mode, which can be played with six stones, three of each colour, is not considered.)
@@ -38,6 +39,8 @@ An **output** of board numbers and optimal positions is generated, both **reduce
 
 It is the possible to **play the game**, either 0, 1 or 2 human players.
 
-### Pending
+### NEXT STEPS
 ---
-The **neural network** is still not implemented...
+**Implement** the neural network.
+
+**Optimise** the structure of the network in terms of complexity, under/overfitting, variance and bias.
