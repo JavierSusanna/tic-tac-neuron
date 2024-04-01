@@ -5,9 +5,14 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+# include <fcntl.h>
 
-# define OUTPUT_BASIC_SET 1
-# define OUTPUT_EXTENDED_SET 8
+# define BASIC_SET_FILE "basic_set.txt"
+# define ALL_SET_FILE "extended_set.txt"
+# define BASIC_SET 1
+# define ALL_SYMMETRIES 8
 
 typedef struct	s_node
 {
@@ -61,7 +66,7 @@ void	play(t_set *all);
 
 /* show.c*/
 void	show_board(int board);
-void	show_results(t_node *nd);
+void	show_results(t_node *nd, int fd_basic, int fd_all);
 void	show_node(t_node *nd);
 void	show_row(int board, int row, t_node *nd, int op_min);
 void	show_game(t_set *all);

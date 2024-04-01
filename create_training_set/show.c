@@ -19,9 +19,36 @@ void	show_board(int board)
 	write(1, "\n", 1);
 }
 
-void	show_results(t_node *nd)
+void	itoa_file(int fd, int n)
+{
+	char	c;
+
+	if (n < 0)
+	{
+		write(fd, "-", 1);
+		n = -n;
+	}
+	if (n > 9)
+		itoa_file(fd, n / 10);
+	c = '0' + n % 10;
+	write(fd, &c, 1);
+}
+
+void	write_brd_chances(int fd, int brd, int *chances, int op)
 {
 	int	i;
+
+	itoa_file(fd, brd);
+	write(fd, " ", 1);
+	i = -1;
+	while (++i < 9)
+		itoa_file(fd, chances[apply_symm(i, op)]);
+	write(fd, "\n", 1);
+
+}
+
+void	show_results(t_node *nd, int fd_basic, int fd_all)
+{
 	int	j;
 	int	op;
 	int	done[8];
@@ -31,7 +58,7 @@ void	show_results(t_node *nd)
 	while (op < 8)
 		done[op++] = -1;
 	op = -1;
-	while (++op < OUTPUT_BASIC_SET)
+	while (++op < ALL_SYMMETRIES)
 	{
 		brd = rearrange(nd->min_brd, op);
 		j = -1;
@@ -43,11 +70,9 @@ void	show_results(t_node *nd)
 		if (-1 == done[j])
 		{
 			done[j] = brd;
-			printf("%i ", brd);
-			i = -1;
-			while (++i < 9)
-				printf("%i", nd->chances[apply_symm(i, op)]);
-			printf("\n");
+			if (op < BASIC_SET)
+				write_brd_chances(fd_basic, brd, nd->chances, op);
+			write_brd_chances(fd_all, brd, nd->chances, op);
 		}
 	}
 }

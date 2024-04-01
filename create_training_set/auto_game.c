@@ -202,10 +202,10 @@ void play(t_set *all)
 		show_game(all);
 		winner = won(brd);
 		if (winner > 0)
-			printf("Player %d won!\n", winner); /*((all->moves - 1) % 2) + 1);*/
+			printf("PLAYER %d WON!\n", winner); /*((all->moves - 1) % 2) + 1);*/
 		else
-			printf("The game ended in a draw\n");
-		printf("\n\n**************************\nPlay again? (1 yes) ");
+			printf("STALEMATE.\n");
+		printf("WANT TO PLAY AGAIN? (1 YES) \n");
 		scanf("%d", &pos);
 		if (pos != 1)
 			break;

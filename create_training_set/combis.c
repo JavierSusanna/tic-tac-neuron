@@ -15,9 +15,31 @@ int	ft_atoi(char *str)
 	return (ret);
 }
 
-int	main(void)
+void	create_sets(t_node *nd)
 {
 	int	n;
+	int	fd_basic;
+	int	fd_all;
+
+	fd_basic = open(BASIC_SET_FILE, O_CREAT | O_WRONLY);
+	fd_all = open(ALL_SET_FILE, O_CREAT | O_WRONLY);
+	if (fd_basic > 0 && fd_all > 0)
+	{
+		n = -1;
+		while (++n < 627)
+			show_results(nd + n, fd_basic, fd_all);
+		fchmod(fd_basic, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+		fchmod(fd_all, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+		printf("\nTraining sets created\n");
+	}
+	else
+		printf("\nError creating training sets\n");
+	close(fd_basic);
+	close(fd_all);
+}
+
+int	main(void)
+{
 	t_set	all;
 	int	*ans;
 
@@ -32,10 +54,7 @@ int	main(void)
 	ans = auto_play(&all);
 /*	printf("Wins: %i\nDraws: %i\nLosses: %i\n", ans[2], ans[1], ans[0]);
 	printf("####################\n");*/
-	n = -1;
-	while (++n < 627)
-		show_results(all.nd + n);
-	printf("\nTraining set created\n");
+	create_sets(all.nd);
 	printf("\nYou can now play tic-tac-toe\n");
 	play(&all);
 	return (0);
