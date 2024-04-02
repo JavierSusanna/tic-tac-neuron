@@ -28,8 +28,10 @@ void	create_sets(t_node *nd)
 		n = -1;
 		while (++n < 627)
 			show_results(nd + n, fd_basic, fd_all);
-		fchmod(fd_basic, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
-		fchmod(fd_all, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+		chmod(BASIC_SET_FILE, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+		chmod(ALL_SET_FILE, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+/*		fchmod(fd_basic, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);
+		fchmod(fd_all, S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH);*/
 		printf("\nTraining sets created\n");
 	}
 	else
@@ -52,8 +54,8 @@ int	main(void)
 	all.now->box = &(all.nd[0]);
 /*	printf("auto_play\n");*/
 	ans = auto_play(&all);
-/*	printf("Wins: %i\nDraws: %i\nLosses: %i\n", ans[2], ans[1], ans[0]);
-	printf("####################\n");*/
+	printf("Wins: %i\nDraws: %i\nLosses: %i\n", ans[2], ans[1], ans[0]);
+	printf("####################\n");
 	create_sets(all.nd);
 	printf("\nYou can now play tic-tac-toe\n");
 	play(&all);
